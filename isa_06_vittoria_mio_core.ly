@@ -33,6 +33,19 @@ melody = \relative c'' {
   c g'4
   a4. b8 c4
   b2 b4
+  d4 d8[( b)] c[( d)] % p2
+  e[( d)] e[( d)] c[( b)]
+  b4 a4. g8
+  g2 g4\p
+  \autoBeamOn
+  g8( f! g e f g
+  c ^ \markup \italic { cresc. } b c a b c)
+  d( c d b c d
+  e f e d c b
+  a4) a b\f
+  c c d
+  e( d4.) c8
+  c2.\fermata
 }
 
 text = \lyricmode {
@@ -57,6 +70,16 @@ text = \lyricmode {
   re! Non
   la -- gri -- mar
   più, È
+  sciol -- ta __ d'A -- % p2
+  mo -- re __ La __
+  vil ser -- vi --
+  tù; È
+  sciol --
+  _
+  ta d'A
+  mo -- re La
+  ser -- vi --
+  tù.
 }
 
 upper = \relative c'' {
@@ -85,6 +108,18 @@ upper = \relative c'' {
   << {c4 g'2~} \\ {c,2 d4} >>
   << {g4( fis)} \\ {c2} >> <c fis c'>4
   << {<b' g>4( g)} \\ {d2} >> <b' g d>4
+  <d b g d>2. % p2
+  << {d4 c b} \\ {<g e>2.} >>
+  << {b4( a2)} \\ {g2 fis4} \\ {\stemDown \once \override NoteColumn #'force-hshift = #0.5 d2.} >>
+  <g b,>4( g,) g'\p
+  <g c, g>2.
+  << {g4 f! c'~} \\ {<c, a>2 <f c>4} >>
+  << {c' b d~} \\ {<g, d>2 <b g>4} >>
+  << {d4 c e} \\ {<g, e>2 <c g>4} >>
+  <c, e a>4 <a c a'>\sf <d f b>\sf
+  <c e c'>\sf <c' g c,> <d c a>
+  <e c g> <d b g f>2\sf->
+  <c g e>2.\fermata
 }
 
 lower = \relative c {
@@ -113,7 +148,19 @@ lower = \relative c {
   << {e'2 g4} \\ {c,2 b4} >>
   <a a'>2.
   <g g'>2.
-}
+  b2. % p2
+  c
+  d
+  g,
+  <e e'>2.
+  a
+  g
+  c
+  f4 <f f,> <g g,>
+  <a a,> <e e,> <f f,>
+  <g g,> <g, g,>2->
+  <c c,>2\fermata
+ }
 
 \score {
   <<
