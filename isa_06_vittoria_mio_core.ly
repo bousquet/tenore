@@ -46,6 +46,18 @@ melody = \relative c'' {
   c c d
   e( d4.) c8
   c2.\fermata
+  r4 ^ \markup \italic { meno mosso e dolce assai } r g\p % meno mosso
+  c c4. e8
+  c4 c e,
+  g g g
+  e c c'
+  e e e
+  c c g
+  d' e8[( d)] c[( b)]
+  b4( a2)
+  g2 g4
+  e c ^ \markup \italic { cresc. } c'
+  a f f'
 }
 
 text = \lyricmode {
@@ -80,6 +92,18 @@ text = \lyricmode {
   mo -- re La
   ser -- vi --
   tù.
+  Già % meno mosso
+  l'em -- pia~a' tuoi
+  dan -- ni, Fra
+  stuo -- lo di
+  sguar -- di, Con
+  vez -- zi bu --
+  giar -- di Di
+  spo -- se __ gl'in --
+  gan --
+  ni; Le
+  fro -- de, gli~af --
+  fan -- ni Non
 }
 
 upper = \relative c'' {
@@ -120,6 +144,18 @@ upper = \relative c'' {
   <c e c'>\sf <c' g c,> <d c a>
   <e c g> <d b g f>2\sf->
   <c g e>2.\fermata
+  <g e c g>2.\p % meno mosso
+  <g e c g>
+  <g e c g>
+  <g f d b>
+  <g e c>
+  <g e c>
+  <g e c>
+  << {d'4 c b} \\ {<g d>4 <g e>2} >>
+  << {b4( a2)} \\ {g2 fis4} \\ {\stemDown \once \override NoteColumn #'force-hshift = #0.5 d2.} >>
+  <g b,>2.
+  <g e>2.
+  <a f>2.
 }
 
 lower = \relative c {
@@ -160,6 +196,18 @@ lower = \relative c {
   <a a,> <e e,> <f f,>
   <g g,> <g, g,>2->
   <c c,>2.\fermata
+  <c c,>2.~ ^ \markup \italic { meno mosso e dolce assai } % meno mosso
+  <c c,>2.
+  <c c,>2.~
+  <c c,>2.
+  <c c,>2.~
+  <c c,>2.
+  c
+  b4 c2
+  d2.
+  g,
+  <c c'>2.
+  <f c'>2. ^ \markup \italic { cresc. }
  }
 
 \score {
