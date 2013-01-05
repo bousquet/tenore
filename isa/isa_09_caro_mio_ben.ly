@@ -25,7 +25,14 @@ melody = \relative c'' {
   ees2 r
   r1
   r2 bes'4\p c8 d
-  c2
+  c2\< c4 d8 ees
+  d2 \!f4->\f ees8 d
+  c8[( a)] bes[( ees)] d4 c8. bes16
+  bes2\< c4->\! bes8.\> aes16
+  g4 r\! bes aes8 g
+  g4( f) \breathe ees'->\f ^ \markup \italic { rit. } a,8 a
+  bes2\( ees4\ppp\) ^ \markup \italic { a tempo } d8. c16
+  bes2
 }
 
 text = \lyricmode {
@@ -39,7 +46,14 @@ text = \lyricmode {
   te __ lan -- gui -- sce~il
   cor. __
   Il tuo fe --
-  del
+  del so -- spi -- ra~o --
+  gnor. Ces -- sa, cru --
+  del,__ tan -- to ri -- _
+  gor! Ces -- sa, cru --
+  del, tan -- to ri --
+  gor,__ tan -- to ri --
+  gor! Ca -- ro mio
+  ben,
 }
 
 upper = \relative c'' {
@@ -63,6 +77,14 @@ upper = \relative c'' {
     << {g4->( } \\ {<ees bes>4\f} >>
     << {f8. ees16} \\ {aes,4} \\ {\stemDown \once \override NoteColumn #'force-hshift = #1.5 ees'8 d}  >>
   << {ees8) bes( g ees)} \\ {<bes' g>4} >> <bes f bes,>8\p <bes f bes,>-.( <bes f d>-. <bes f d>-.)
+  <bes f c>8(\< <bes f c> <a f c> <a f c> <c f, ees> <c f, ees> <c a ees> <c a ees>)
+  <c f, d>) <c f, d>\! <bes f d> <bes f d>) <bes f>\f( <bes f> <a f> <bes f>)
+  <c a f>( <c a f> <bes f> <bes g ees> <bes f d> <bes f d> <bes f c> <a ees c>
+  <bes f d>) d,( f bes) << {c4( bes8. aes16} \\ {<aes! d,>4 <f>}>>
+  << {<g ees>8) bes,\( ees g} \\ {} >> << {bes4 aes8 g} \\ {ees4 f} >>
+  << {<g ees>4 <f d>8\) bes} \\ {} >> << {a4( ees')} \\ {ees,2\f } >>
+  << {d'8( c bes aes!) g4( aes} \\ {<bes, f>4 r ees\ppp  ^ \markup \italic { a tempo } ees} >>
+  << {<bes ees>8)} \\ {} >>
 }
 
 lower = \relative c {
@@ -84,7 +106,14 @@ lower = \relative c {
   <bes g ees>2 g4( aes
   bes8) aes( g c) bes4->( bes,
   ees2) d4( bes
-  f)
+  f) f'( a f
+  bes) g d'->( c8 bes
+  ees,4) d8( ees f2)
+  bes f4( d
+  ees) r g( aes
+  bes bes,) c2(
+  bes) ees,4( f
+  g2)
 }
 
 \include "isa_score.ly"
