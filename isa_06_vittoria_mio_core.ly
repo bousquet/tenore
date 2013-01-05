@@ -159,7 +159,7 @@ lower = \relative c {
   f4 <f f,> <g g,>
   <a a,> <e e,> <f f,>
   <g g,> <g, g,>2->
-  <c c,>2\fermata
+  <c c,>2.\fermata
  }
 
 \score {
