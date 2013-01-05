@@ -18,15 +18,15 @@ melody = \relative c'' {
   c4 a bes
   c a f
   a ~ g2
-  f \breathe c4\p
+  f c4\p
   d4. e8 f4
   e2 g4
   a4. b8 c4
-  b2 \breathe b4\f
+  b2 b4\f
   d d\< d
   d c b\!
   b\> a4. g8\!
-  g2 \breathe g4\mf
+  g2 g4\mf
   g e f
   g c, d
   e( d2)
