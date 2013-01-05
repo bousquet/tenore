@@ -135,7 +135,7 @@ upper = \relative c'' {
   <d b g d>2. % p2
   << {d4 c b} \\ {<g e>2.} >>
   << {b4( a2)} \\ {g2 fis4} \\ {\stemDown \once \override NoteColumn #'force-hshift = #0.5 d2.} >>
-  <g b,>4( g,) g'\p
+  <g b,>4 g, g'\p % TODO: Add slur
   <g c, g>2.
   << {g4 f! c'~} \\ {<c, a>2 <f c>4} >>
   << {c' b d~} \\ {<g, d>2 <b g>4} >>
