@@ -210,17 +210,4 @@ lower = \relative c {
   <f c'>2. ^ \markup \italic { cresc. }
  }
 
-\score {
-  <<
-    \new Voice = "mel" { \autoBeamOff \melody }
-    \new Lyrics \lyricsto mel \text
-    \new PianoStaff <<
-      \new Staff = "upper" \upper
-      \new Staff = "lower" \lower
-    >>
-  >>
-  \layout {
-    \context { \Staff \RemoveEmptyStaves }
-  }
-  \midi { }
-}
+\include "isa_score.ly"

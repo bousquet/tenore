@@ -9,7 +9,7 @@ Schirmer.
 3. Alma del core _not started_
 4. Comme raggio del sol _not started_
 5. Sebben, crudele _not started_
-6. Vittoria, mio core! _WIP, page 1 completed_
+6. Vittoria, mio core! _WIP, page 2 completed_
 7. Danza, danza, fanciulla gentile _not started_
 8. Vergin, tutto amor _not started_
 9. Caro mio ben _not started_
