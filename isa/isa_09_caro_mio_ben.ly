@@ -112,6 +112,10 @@ lower = \relative c {
   bes f4( d
   ees) r g( aes
   bes bes,) c2(
+    -\tweak #'self-alignment-X #-3
+    -\tweak #'Y-offset #ly:self-alignment-interface::y-aligned-on-self
+    -\tweak #'self-alignment-Y #-7
+    ^ \markup \italic { rit. }
   bes) ees,4( f
   g2)
 }
