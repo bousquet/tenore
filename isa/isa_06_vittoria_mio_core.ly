@@ -1,9 +1,9 @@
 \version "2.16.1"
 \header {
-  title     = "Vittoria, mio core!"
-  composer  = "Giacomo Carissini"
-  copyright = "Copyright, 1880, by G. Schirmer, Inc."
-  tagline   = "Engraved by Robert Bousquet"
+  title     = \markup { \smallCaps "Vittoria, mio core!" }
+  composer  = \markup { \smallCaps "Giacomo Carissini" }
+  copyright = \markup { \smallCaps "Copyright, 1880, by G. Schirmer, Inc." }
+  tagline   = \markup { \smallCaps "~ Robert Bousquet ~" }
 }
 
 melody = \relative c'' {
