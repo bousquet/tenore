@@ -26,7 +26,7 @@ melody = \relative c'' {
   r1
   r2 bes'4\p c8 d
   c2\< c4 d8 ees
-  d2 \!f4->\f ees8 d
+  d2 f4->\f\! ees8 d
   c8[( a)] bes[( ees)] d4 c8. bes16
   bes2\< c4->\! bes8.\> aes16
   g4 r\! bes aes8 g
