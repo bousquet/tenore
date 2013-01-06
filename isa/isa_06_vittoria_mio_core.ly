@@ -11,8 +11,11 @@ melody = \relative c'' {
   \key c \major
   \time 3/4
 
-  r4 r g\f
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature)
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
   \mark "Allegro con brio"
+
+  r4 r g\f
   g e f
   g c, r8 c'
   c4 a bes
