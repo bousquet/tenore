@@ -10,7 +10,11 @@ melody = \relative c'' {
   \clef treble
   \key ees \major
 
-  \partial 4*2 r2 \mark "Larghetto" |
+  \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature)
+  \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
+  \mark "Larghetto"
+
+  \partial 4*2 r2 |
   r1
   r
   r
