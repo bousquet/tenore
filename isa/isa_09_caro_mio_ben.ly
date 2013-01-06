@@ -1,9 +1,13 @@
 \version "2.16.1"
 \header {
-  title     = "Caro mio ben"
-  composer  = "Guiseppe Giordani (Giordanello)"
-  copyright = "Copyright, 1894, by G. Schirmer, Inc."
-  tagline   = "Engraved by Robert Bousquet"
+  title     = \markup {\smallCaps "Caro mio ben"}
+  subtitle  = "Arietta"
+  composer  = \markup { \smallCaps "Guiseppe Giordani" }
+  copyright = \markup { \fontsize #-2 \center-column {
+    \smallCaps "Copyright, 1894, by G. Schirmer, Inc."
+    \smallCaps "Copyright renewed, 1922, by Theodore Baker"
+  }}
+  tagline   = \markup {\smallCaps "~ Robert Bousquet ~"}
 }
 
 melody = \relative c'' {
