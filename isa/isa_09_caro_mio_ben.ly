@@ -79,7 +79,7 @@ upper = \relative c'' {
   << {ees8) bes( g ees)} \\ {<bes' g>4} >> <bes f bes,>8\p <bes f bes,>-.( <bes f d>-. <bes f d>-.)
   <bes f c>8(\< <bes f c> <a f c> <a f c> <c f, ees> <c f, ees> <c a ees> <c a ees>)
   <c f, d>) <c f, d>\! <bes f d> <bes f d>) <bes f>\f( <bes f> <a f> <bes f>)
-  <c a f>( <c a f> <bes f> <bes g ees> <bes f d> <bes f d> <bes f c> <a ees c>
+  <c a f>( <c a f> <bes f> <bes g ees> <bes f d>\> <bes f d> <bes f c> <a ees c>\!
   <bes f d>) d,( f bes) << {c4( bes8. aes16} \\ {<aes! d,>4 <f>}>>
   << {<g ees>8) bes,\( ees g} \\ {} >> << {bes4 aes8 g} \\ {ees4 f} >>
   << {<g ees>4 <f d>8\) bes} \\ {} >> << {a4( ees')} \\ {ees,2\f } >>
