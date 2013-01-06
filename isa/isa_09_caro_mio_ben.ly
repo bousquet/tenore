@@ -83,7 +83,7 @@ upper = \relative c'' {
   <bes f d>) d,( f bes) << {c4( bes8. aes16} \\ {<aes! d,>4 <f>}>>
   << {<g ees>8) bes,\( ees g} \\ {} >> << {bes4 aes8 g} \\ {ees4 f} >>
   << {<g ees>4 <f d>8\) bes} \\ {} >> << {a4( ees')} \\ {ees,2\f } >>
-  << {d'8( c bes aes!) g4( aes} \\ {<bes, f>4 r ees\ppp  ^ \markup \italic { a tempo } ees} >>
+  << {d'8( c bes aes!) g4( aes} \\ {<bes f>4 r ees,\ppp  ^ \markup \italic { a tempo } ees} >>
   << {<bes ees>8)} \\ {} >>
 }
 
