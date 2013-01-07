@@ -61,6 +61,14 @@ melody = \relative c'' {
   g2 g4
   e c ^ \markup \italic { cresc. } c'
   a f f'
+  d c c % Page 3
+  d8( c d e f4)
+  e2 g,4
+  c a d
+  b b c
+  d e8[( d)] c[( b)]
+  b4( a2)
+  g g4\f \mark "Tempo I°" % Tempo I
 }
 
 text = \lyricmode {
@@ -107,6 +115,15 @@ text = \lyricmode {
   ni; Le
   fro -- de, gli~af --
   fan -- ni Non
+  han -- no più % Page 3
+  lo --
+  co, Del
+  cru -- do suo
+  fo -- co È
+  spen -- to__ l'ar --
+  do --
+  re! Vit --
+
 }
 
 upper = \relative c'' {
@@ -159,6 +176,14 @@ upper = \relative c'' {
   <g b,>2.
   <g e>2.
   <a f>2.
+  << {g2 c4~} \\ {d,4 e g} >> % Page 3
+  << {c4 b d} \\ {f,2.} >>
+  << {g2.} \\ {e2.} >>
+  << {c'4 a d} \\ {<e, c>4 <fis d>2} >>
+  <b g d>2 <c fis, d>4
+  <d g, d>4 << {c4. b8} \\ {<g e>2} >>
+  << {a4( g2)} \\ {f2 e4} \\ {\stemDown \once \override NoteColumn #'force-hshift = #0.5 c2.} >>
+  <g' b,>2 <g e g,>4\f
 }
 
 lower = \relative c {
@@ -211,6 +236,14 @@ lower = \relative c {
   g,
   <c c'>2.
   <f c'>2. ^ \markup \italic { cresc. }
+  << {b4 c2} \\ {g4 e2} >> % Page 3
+  << {d'2 b4} \\ {d,2.} >>
+  << {c'2.} \\ {c,2.} >>
+  a4 d2
+  g,2 a4
+  b c2
+  d2.
+  g,
  }
 
 \include "isa_score.ly"
