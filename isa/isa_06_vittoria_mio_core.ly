@@ -69,6 +69,28 @@ melody = \relative c'' {
   d e8[( d)] c[( b)]
   b4( a2)
   g g4\f \mark "Tempo I°" % Tempo I
+  g e f!
+  g c, r8 c'
+  c4 a bes
+  c a f
+  a( g2)
+  f c4\p
+  d4. e8 f4
+  e2 g4
+  a4. b8 c4
+  b2 b4\f
+  d d d
+  d c b
+  b a4. g8
+  g2 g4\p
+  g8( f! g e f g
+  c b ^ \markup \italic { cresc. } c a b c
+  d c d b c d
+  e f e d c b
+  a4) a b\f
+  c c d
+  e( d4.) c8
+  c2.\fermata \bar "||"
 }
 
 text = \lyricmode {
@@ -123,7 +145,25 @@ text = \lyricmode {
   spen -- to__ l'ar --
   do --
   re! Vit --
-
+  to -- ria! Vit --
+  to -- ria! Vit --
+  to -- ria! Vit --
+  to -- ria, mio
+  co --
+  re! Non
+  la -- gri -- mar
+  più, Non
+  la -- gri -- mar
+  più, È
+  sciol -- ta d'A --
+  mo -- re La
+  vil ser -- vi --
+  tù, È
+  sciol --
+  ta d'A --
+  mo -- re La
+  ser -- vi --
+  tù!
 }
 
 upper = \relative c'' {
@@ -182,8 +222,30 @@ upper = \relative c'' {
   << {c'4 a d} \\ {<e, c>4 <fis d>2} >>
   <b g d>2 <c fis, d>4
   <d g, d>4 << {c4. b8} \\ {<g e>2} >>
-  << {a4( g2)} \\ {f2 e4} \\ {\stemDown \once \override NoteColumn #'force-hshift = #0.5 c2.} >>
-  <g' b,>2 <g e g,>4\f
+  << {a4( g2)} \\ {<g d>2 <fis c>4} >>
+  <g b,>2 <g e g,>4\f
+  << {<g e>4 <e c>} \\ {g,2} >> <f'! d g,>4 % Tempo I
+  \slurUp <g e g,>( c,) <c' a c,>
+  << {<c a> <a f>} \\ {c,2} >> <bes' e, c>4
+  <c f, c> << {<a f> f} \\ {d2} >>
+  << {a'4( g2)} \\ {f2 e4} \\ {\stemDown \once \override NoteColumn #'force-hshift = #0.5 c2.} >>
+  <f c>4 << {c2\p} \\ {c2~} >>
+  << {d2 f4} \\ {c4( b!2)} >>
+  <e c>4( c) << {g'~} \\ {d} >>
+  << {g4( fis)} \\ {c2} >> <c' fis, c>4
+  << {<b g>4( g) b} \\ {d,2.} >>
+  << {d'4 d d} \\ {<g, d>2.\sf} >>
+  << {d'4 c b} \\ {<g e>2.} >>
+  << {b4( a2)} \\ {g2 fis4} \\ {\stemDown \once \override NoteColumn #'force-hshift = #0.5 d2.} >>
+  <g b,>4( g,) g'\p
+  <g c, g>2.
+  << {g4 f c'~} \\ {<c, a>2 <f c>4} >>
+  << {c'4 b d~} \\ {<g, d>2 <b g>4} >>
+  << {d4 c e} \\ {<g, e>2 <c g>4} >>
+  <a f c> <a c, a>\sf <b f d>\sf
+  <c e, c>\sf <c g c,> <d c a>
+  <e c g>\sf <d b g f>2\sf
+  <c g e>2.\fermata
 }
 
 lower = \relative c {
@@ -244,6 +306,28 @@ lower = \relative c {
   b c2
   d2.
   g,
+  <c c,> % Tempo I
+  <c c,>
+  <f f,>4 f, g
+  a bes2
+  c2.
+  <a' f>2 <g e>4
+  <f d>2.
+  << {g2.} \\ {c,2 b4} >>
+  << {a'2.} \\ {a,2.} >>
+  <g' g,>2.
+  b,
+  c
+  d
+  g,
+  <c c,>
+  a ^ \markup \italic { cresc. }
+  g
+  c
+  f4 <f f,> <g g,>
+  <a a,> <e e,> <f f,>
+  <g g,> <g, g,>2
+  <c c,>2.
  }
 
 \include "isa_score.ly"
