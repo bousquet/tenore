@@ -75,7 +75,7 @@ text = \lyricmode {
   men, sen -- za di
   te __ lan -- gui -- sce~il
   cor, ca -- ro mio
-  ben, cre -- di --mi~al --
+  ben, cre -- di -- mi~al --
   men, sen -- za di
   te __
   lan -- gui -- sce~il
