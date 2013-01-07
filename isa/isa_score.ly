@@ -1,4 +1,7 @@
 \score {
+  \paper {
+    #(set-default-paper-size "letter")
+  }
   <<
     \new Voice = "mel" { \autoBeamOff \melody }
     \new Lyrics \lyricsto mel \text
