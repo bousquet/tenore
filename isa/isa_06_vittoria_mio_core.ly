@@ -21,31 +21,31 @@ melody = \relative c'' {
   c4 a bes
   c a f
   a ~ g2
-  f c4\p
+  f c4\p -\tag #'bsqt ^\breathe
   d4. e8 f4
   e2 g4
   a4. b8 c4
-  b2 b4\f
+  b2 b4\f -\tag #'bsqt ^\breathe
   d d\< d
   d c b\!
   b\> a4. g8\!
-  g2 g4\mf
+  g2 g4\mf -\tag #'bsqt ^\breathe
   g e f
   g c, d
   e( d2)
-  c g'4
+  c g'4 -\tag #'bsqt ^\breathe
   a4. b8 c4
   b2 b4
   d4 d8[( b)] c[( d)] % p2
   e[( d)] e[( d)] c[( b)]
   b4 a4. g8
-  g2 g4\p
+  g2 g4\p -\tag #'bsqt ^\breathe
   \autoBeamOn
   g8( f! g e f g
   c ^ \markup \italic { cresc. } b c a b c)
   d( c d b c d
   e f e d c b
-  a4) a b\f
+  a4) a b\f -\tag #'bsqt ^\breathe
   c c d
   e( d4.) c8
   c2.\fermata
@@ -53,41 +53,41 @@ melody = \relative c'' {
   c c4. e8
   c4 c e,
   g g g
-  e c c'
+  e c -\tag #'bsqt ^"(!)" c' -\tag #'bsqt ^\breathe
   e e e
-  c c g
+  c c g -\tag #'bsqt ^\breathe
   d' e8[( d)] c[( b)]
   b4( a2)
-  g2 g4
+  g2 g4 -\tag #'bsqt ^\breathe
   e c ^ \markup \italic { cresc. } c'
   a f f'
   d c c % Page 3
   d8( c d e f4)
-  e2 g,4
+  e2 g,4 -\tag #'bsqt ^\breathe
   c a d
   b b c
   d e8[( d)] c[( b)]
   b4( a2)
-  g g4\f \mark "Tempo I°" % Tempo I
+  g g4\f -\tag #'bsqt ^\breathe \mark "Tempo I°" % Tempo I
   g e f!
   g c, r8 c'
   c4 a bes
   c a f
   a( g2)
-  f c4\p
+  f c4\p -\tag #'bsqt ^\breathe
   d4. e8 f4
   e2 g4
   a4. b8 c4
-  b2 b4\f
+  b2 b4\f -\tag #'bsqt ^\breathe
   d d d
   d c b
   b a4. g8
-  g2 g4\p
+  g2 g4\p -\tag #'bsqt ^\breathe
   g8( f! g e f g
   c b ^ \markup \italic { cresc. } c a b c
   d c d b c d % Page 3
   e f e d c b
-  a4) a b\f
+  a4) a b\f -\tag #'bsqt ^\breathe
   c c d
   e( d4.) c8
   c2.\fermata \bar "||"
@@ -95,41 +95,41 @@ melody = \relative c'' {
   c c4. e8
   c4 c e,
   g g g
-  e c c'
+  e c -\tag #'bsqt ^"(!)" c' -\tag #'bsqt ^\breathe
   e e e
-  c c g
+  c c g -\tag #'bsqt ^\breathe
   d' e8[( d)] c[( b)]
   b4( a2)
-  g2 g4
+  g2 g4 -\tag #'bsqt ^\breathe
   e c ^ \markup \italic { cresc. } c'
   a f f'
   d c c
   \grace { d16[( e] } d8)( c d e f4)
-  e2 g,4
+  e2 g,4 -\tag #'bsqt ^\breathe
   c\< a d
-  b b\! c
+  b b\! c -\tag #'bsqt ^\breathe
   d\f e8[( d)] c[( b)]
   b4\>( a2)
-  g\! g4\f \mark "Tempo I°" % Tempo I
+  g\! g4\f -\tag #'bsqt ^\breathe \mark "Tempo I°" % Tempo I
   g e f!
   g c, r8 c'
   c4 a bes
   c a f
   a( g2)
-  f c4\p
+  f c4\p -\tag #'bsqt ^\breathe
   d4. e8 f4
   e2 g4
   a4. b8 c4
-  b2 b4\f
+  b2 b4\f -\tag #'bsqt ^\breathe
   d d d
   d c b
   b a4. g8
-  g2 g4\p
+  g2 g4\p -\tag #'bsqt ^\breathe
   g8( f! g e f g
   c b ^ \markup \italic { cresc. } c a b c
   d c d b c d
   e f e d c b
-  a4) a b\f ^ \markup \italic { \tiny "largamente stent." }
+  a4) a b\f -\tag #'bsqt ^\breathe ^ \markup \italic { \tiny "largamente stent." }
   c  c d
   e\( \grace { d16[( e]} d4.)\) c8
   c2.\fermata \bar "|."

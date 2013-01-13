@@ -3,6 +3,7 @@
     #(set-default-paper-size "letter")
   }
   <<
+    % \removeWithTag #'bsqt
     \new Voice = "mel" { \autoBeamOff \melody }
     \new Lyrics \lyricsto mel \text
     \new PianoStaff <<
