@@ -16,10 +16,31 @@ melody = \relative c'' {
   \mark "Andantino"
 
 
-  \repeat unfold 18 { R1 * 3/4 }
+  \repeat unfold 20 { R1 * 3/4 }
+  a4 d f % voce
+  e4.( d8) d4
+  \repeat unfold 2 { R1 * 3/4 }
+  a4 d a
+  bes2 bes4
+  \repeat unfold 2 { R1 * 3/4 }
+  d4 f, g
+  bes( a) r4\fermata
+  d4 ^ \markup \italic { cresc. } e f
+  g2 f4
+  f4.\( e8\) d[( e)]
+  f2. ^ \markup \italic { dim. }
 }
 
 text = \lyricmode {
+  Pie -- tà, Si --
+  gno -- re,
+  di me do --
+  len -- te!
+  Si -- gnor, pie --
+  tà, __
+  se a te
+  giun -- ge~il
+  mi -- o pre -- gar;
 
 }
 
@@ -48,7 +69,18 @@ upper = \relative c'' {
   <d f,>\>~
   <d f,>\p~
   <d f,>2 r4 \bar "||"
-
+  \repeat unfold 2 { R1 * 3/4 } % voce
+  <f d>2.~
+  <f d>
+  \repeat unfold 2 { R1 * 3/4 }
+  <g bes,>2.~
+  <g bes,>
+  << {d'4( f, g} \\ {r4 d2} >>
+  << {<e cis>2)} \\ {s2} >> r4\fermata
+  r8 d <e a,> d <f a,> d
+  r8 d <g bes,> d <f a,> d
+  r8 c <bes' g> c, <bes' g> c,
+  r8 c <a' f> c, <a' f> c,
 }
 
 lower = \relative c {
@@ -76,6 +108,18 @@ lower = \relative c {
   d cis d cis d cis)
   d4( f, g8 a
   d,2) r4
+  \repeat unfold 2 { R1 * 3/4 } % voce
+  \dynamicUp d'8(\p\< e f e f e
+  d\!\> cis d2)\!
+  \repeat unfold 2 { R1 * 3/4 }
+  g,8(\p\< a bes a bes a
+  g\> fis g4. a8\!
+  bes4) <bes' bes,>2
+  <a a,> r4\fermata
+  d,2 ^ \markup \italic { cresc. } r4
+  <g g,>2 r4
+  <c, c,>2.
+  <f f,> ^ \markup \italic { dim. }
 }
 
 \include "isa_score.ly"
