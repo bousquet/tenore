@@ -53,6 +53,19 @@ melody = \relative c'' {
   g8[( f)] f[( e)] e[( ^ \markup \italic { dim. } d)]
   f[( e)] d4 ^ \markup \italic { rit. } cis\trill
   d2 ^ \markup \italic { a tempo } r4
+  r4 r a\p
+  bes bes r
+  r r a
+  g g r
+  d' ^ \markup \italic { cresc. } g, ^ \markup \italic { molto }  f'
+  f2 e4
+  e\f a, g'
+  g8[( f)] f[( ^ \markup \italic { dim. } e)] e[( d)]
+  f[( e)] d4 cis
+  d2 f,4\f
+  g a2
+  d r4
+  R1 * 3/4
 }
 
 text = \lyricmode {
@@ -88,6 +101,18 @@ text = \lyricmode {
   nel fuo -- co~e --
   ter -- no Dal
   tu -- o ri --
+  gor.
+  Gran
+  Di -- o.
+  giam --
+  ma -- i
+  si -- a dan --
+  na -- to
+  nel fuo -- co~e --
+  ter -- no Dal
+  tu -- o ri --
+  gor, dal
+  tuo ri --
   gor.
 }
 
@@ -151,7 +176,20 @@ upper = \relative c'' {
   <a g e'>\< <a g e'> <a g e'> <a g e'> <a g e'> <a g e'>\!
   r <a f d'> r <g e cis'> r <f d d'>
   r <e d> r <f d> r <g e>
-  <f d> ^ \markup \italic { a tempo } r r4 r8 a8
+  <f d> ^ \markup \italic { a tempo } r r4 r8 a8(
+  d\p \< f e d cis d) \!
+  \acciaccatura { e8 } d( \> cis d4) \! r8 a(
+  d \< f e d cis d) \!
+  \acciaccatura { e8 } d( \> cis d2) \!
+  <f, g d'>8 <f g d'> <f g d'> <f g d'> <f g d'> <f g d'>
+  <f g c> <f g c> <f g c> <f g c> <e g c> <e g c>
+  <g a e'>\f <g a e'> <g a e'> <g a e'> <g a e'> <g a e'>
+  r <f a d> r <e g cis> r <d f d'>
+  r <d e> <d f>4 <cis e g>
+  <d f> r r\f
+  R1 * 3/4
+  <d f>2.~
+  <d f>
 }
 
 lower = \relative c {
@@ -215,6 +253,19 @@ lower = \relative c {
   <d d,> r <a a,> r <bes bes,> ^ \markup \italic { dim. } r
   <g g,>4 <a a,> ^ \markup \italic { rit. } <a a,>
   <a d,>8 <f' d>( <a f> <g e> <f d> <e a,>)
+  << { r8 <a, d> <a d> <a d> <a d> <a d> } \\ { f2. } >>
+  << { r8 <bes d> <bes d> <bes d> ^ \markup \italic { cresc. } <bes d> <bes d> } \\ { g2. } >>
+  << { r8 <d' f> <d f> <d f> <d f> <d f> } \\ { a2. } >>
+  << { r8 <d f> <d f> <d f> <d f> <d f> } \\ { bes2. } >>
+  <b, b'>8 ^ \markup \italic { cresc. } <b' b,> <b b,> ^ \markup \italic { molto } <b b,> <b b,> <b b,>
+  <c c,> <c c,> <c c,> <c c,> <c c,> <c c,>
+  <cis cis,> <cis cis,> <cis cis,> <cis cis,> <cis cis,> <cis cis,>
+  <d d,>8 r <a a,> ^ \markup \italic { dim. } r <bes bes,> r
+  <g g,>4 <a a,> <a a,>
+  <d, a'> r <f f,>
+  <g g,> <a a,>2
+  d,8( e f e f e
+  d cis d c bes a)
 }
 
 \include "isa_score.ly"
