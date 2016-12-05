@@ -240,7 +240,6 @@ VerseSix= \lyricmode {
       \override DynamicText.direction = #UP
       \override DynamicLineSpanner.direction = #UP
     }
-    #(set-default-paper-size "letter")
   }
   \midi { }
 }
