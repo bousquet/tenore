@@ -56,7 +56,7 @@ melody = \relative c'' {
     }
    {
      \key ees \major
-     bes,16 bes'2~ bes8[ aes g] f
+     bes,16 bes'2~( bes8[ aes g]) f
    }
   >>
 
@@ -112,7 +112,8 @@ VerseTwo= \lyricmode {
   dans une hum -- ble
   crè che; Puis --
   sants du jour fier de vo -- tre gran -- deur,
-  À votre or -- gueil c'est de là qu'un Dieu prê -- che;
+  À votre or -- gueil c'est
+  de __ là qu'un Dieu prê -- che;
 }
 
 VerseThree= \lyricmode {
@@ -133,7 +134,7 @@ VerseThree= \lyricmode {
   naît, qu'il souffre et meurt. __
   Peu -- ple, de --
   bout!
-  Chan -- te ta dé -- li --
+  Chan -- te __ ta dé -- li --
   vran -- ce.
 }
 
@@ -170,6 +171,7 @@ VerseFour= \lyricmode {
   \layout {
     #(set-default-paper-size "letter")
     \context { \Staff \RemoveEmptyStaves }
+    \override LyricText #'font-size = #-1
   }
   <<
     % \removeWithTag #'bsqt
