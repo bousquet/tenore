@@ -1,11 +1,11 @@
 \version "2.18.1"
+
 \header {
-  title     = \markup {\smallCaps "'Cantique Noël"}
-  subtitle  = \markup {\smallCaps "Minuit, chrétiens"}
-  composer  = \markup { \smallCaps "Adolphe ADAM" }
-  %{arranger  = \markup { \smallCaps "Giovanni Capurro" }%}
-  %{copyright = \markup { \smallCaps "Composed 1898, Neopolitan, Public Domain" }%}
-  tagline   = \markup {\smallCaps "~ Robert Bousquet ~"}
+  title     = \markup { "Cantique de Noël"}
+  subtitle  = \markup { "Minuit, chrétiens"}
+  composer  = \markup { \smallCaps "Adolphe Adam (1803-1856)" }
+  poet      = \markup { \smallCaps "Placide Cappeau (1808-1877)"}
+  tagline   = \markup { \smallCaps "~ Robert Bousquet ~"}
 }
 
 melody = \relative c'' {
@@ -41,7 +41,9 @@ melody = \relative c'' {
   d2~ d4~ d8. d16
   f2~ f8. c16 c8. c16
   ees2 ees4 r8. ees16
+  \set melismaBusyProperties = #'()
   g2( f4..) bes,16
+  \unset melismaBusyProperties
   ees2(~ ees4 d8.) c16
   bes2~ bes8. bes16 \appoggiatura d16 c8. bes16
   bes2. r8. ees16
@@ -87,10 +89,10 @@ VerseOne = \lyricmode {
   noux, __ at --
   tends __ ta dé -- li --
   vran -- ce. No --
-  ël! __ No --
+  ël! __ _ No --
   ël! __  voi --
   ci __ le Ré -- demp --
-  teur, No --
+  teur, __ No --
   ël! __ No --
   ël! __ voi --
   ci le __ Ré -- demp --
@@ -112,8 +114,9 @@ VerseTwo= \lyricmode {
   dans une hum -- ble
   crè che; Puis --
   sants du jour fier de vo -- tre gran -- deur,
-  À votre or -- gueil c'est
-  de __ là qu'un Dieu prê -- che;
+  À __ votre or --
+  gueil __ c'est
+  de __ là qu'un Dieu prê -- che.
 }
 
 VerseThree= \lyricmode {
@@ -154,10 +157,10 @@ VerseFour= \lyricmode {
   yon -- der breaks a
   new and glo -- rious morn.
   Fall __ on your
-  knees. Oh,
+  knees. __  Oh,
   hear __ the an -- gel
   voi -- ces O
-  night __ di --
+  night __  _ di --
   vine! __ O __
   night, __ when Christ was
   born! __ O
@@ -167,23 +170,77 @@ VerseFour= \lyricmode {
   vine!
 }
 
+VerseFive= \lyricmode {
+  \set stanza = #"5. "
+  _ Led by the
+  light, of faith ser -- ene -- ly
+  beam -- ing, With glow -- ing
+  hearts by His cra -- dle we
+  stand.
+  O' -- er the
+  world a star is sweet -- ly
+  gleam -- ing, Now come the
+  wisemen from the O -- ri -- ent
+  land. The
+  King of kings lay
+  thu -- s low -- ly man -- ger; In
+  all our trials born
+  to be ou -- r friends.
+  He knows our need, our
+  week -- ness is no
+  stran -- ger, Be --
+  hold __ _ your King! __ Be --
+  fore him low -- ly bend! Be --
+  hold __ your King! Be --
+  fore him low -- ly
+  bend!
+}
+
+
+VerseSix= \lyricmode {
+  \set stanza = #"6. "
+  _ Tru -- ly He
+  taught us to love one an --
+  oth -- er, His law is
+  love and His gos -- pel is peace.
+  Chains he shall
+  break, for the slave is our
+  bro -- ther. And in his
+  name all opp -- res -- sion shall
+  cease. Sweet
+  hymns of joy in
+  grate -- ful cho -- rus raise we, With
+  all our hearts we
+  praise His ho -- ly name.
+  Christ is the Lord! Then
+  ev -- er, ev -- er
+  praise we, His
+  pow -- er and
+  glo -- ry ev -- er more
+  pro -- claim! His
+  power and
+  glo -- ry ev -- er more pro --
+  claim!
+}
+
 \score {
-  \layout {
-    #(set-default-paper-size "letter")
-    \context { \Staff \RemoveEmptyStaves }
-    \override LyricText #'font-size = #-1
-  }
   <<
-    % \removeWithTag #'bsqt
     \new Voice = "mel" { \melody }
     \new Lyrics \lyricsto mel \VerseOne
     \new Lyrics \lyricsto mel \VerseTwo
     \new Lyrics \lyricsto mel \VerseThree
     \new Lyrics \lyricsto mel \VerseFour
-    %{\new PianoStaff <<
-      \new Staff = "upper" \upper
-      \new Staff = "lower" \lower
-    >>%}
+    \new Lyrics \lyricsto mel \VerseFive
+    \new Lyrics \lyricsto mel \VerseSix
   >>
+  \layout {
+    indent = 0
+    \context {
+      \Score
+      \override DynamicText.direction = #UP
+      \override DynamicLineSpanner.direction = #UP
+    }
+    #(set-default-paper-size "letter")
+  }
   \midi { }
 }
