@@ -20,7 +20,9 @@ melody = \relative c'' {
 
 
   r1
+  \set melismaBusyProperties = #'()
   r4 r8. g16\mf g4( g8.) bes16
+  \unset melismaBusyProperties
   bes4( bes8.) bes16 c8. c16 aes8. c16
   ees2 bes8 r16 bes g8. f16
   ees4 g8. aes16 bes4 aes8. f16
@@ -67,7 +69,7 @@ melody = \relative c'' {
 
 VerseOne = \lyricmode {
   \set stanza = #"1. "
-  Mi -- nuit, __ chré --
+  Mi -- nuit, __ _ chré --
   tiens, __ c'est l'heu -- re so -- len --
   nel -- le Où l'Hom -- me --
   Dieu des -- cen -- dit jus -- qu'a
@@ -97,7 +99,7 @@ VerseOne = \lyricmode {
 
 VerseTwo= \lyricmode {
   \set stanza = #"2. "
-  De no -- tre
+  De no -- _ tre
   foi, __ que la lu -- miè -- re~ar
   den -- te Nous gui -- de --
   tous au bar -- ceau de l'En
@@ -115,7 +117,7 @@ VerseTwo= \lyricmode {
 
 VerseThree= \lyricmode {
   \set stanza = #"3. "
-  Le Ré -- demp --
+  Le Ré -- _ demp --
   teur a bri -- sé toute en --
   tra -- ve, La Terre est --
   libre et le Ciel est ou --
@@ -133,7 +135,35 @@ VerseThree= \lyricmode {
   bout!
   Chan -- te ta dé -- li --
   vran -- ce.
+}
 
+VerseFour= \lyricmode {
+  \set stanza = #"4. "
+  _ O ho -- ly
+  night, the stars are bright -- ly
+  shi -- ning, it is the
+  night of our dear sav -- iour's
+  birth. Long lay the
+  world, in sin and er -- ror
+  pin -- ing, Till he ap --
+  pear'd, and the soul felt its
+  worth. A
+  thrill of hope the
+  wear -- y world re -- joi -- ces, For
+  yon -- der breaks a
+  new and glo -- rious morn.
+  Fall __ on your
+  knees. Oh,
+  hear __ the an -- gel
+  voi -- ces O
+  night __ di --
+  vine! __ O __
+  night, __ when Christ was
+  born! __ O
+  night __ di --
+  vine, __ O
+  night, O night di --
+  vine!
 }
 
 \score {
@@ -147,6 +177,7 @@ VerseThree= \lyricmode {
     \new Lyrics \lyricsto mel \VerseOne
     \new Lyrics \lyricsto mel \VerseTwo
     \new Lyrics \lyricsto mel \VerseThree
+    \new Lyrics \lyricsto mel \VerseFour
     %{\new PianoStaff <<
       \new Staff = "upper" \upper
       \new Staff = "lower" \lower
