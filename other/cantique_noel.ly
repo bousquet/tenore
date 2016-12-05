@@ -12,13 +12,15 @@ melody = \relative c'' {
   \clef treble
   \key ees \major
   \time 4/4
+  \autoBeamOn
 
   \once \override Score.RehearsalMark #'break-align-symbols = #'(time-signature)
   \once \override Score.RehearsalMark #'self-alignment-X = #LEFT
   \mark "Andante maestoso"
 
+
   r1
-  r4 r8. g16 g4( g8.) bes16
+  r4 r8. g16\mf g4( g8.) bes16
   bes4( bes8.) bes16 c8. c16 aes8. c16
   ees2 bes8 r16 bes g8. f16
   ees4 g8. aes16 bes4 aes8. f16
@@ -26,17 +28,41 @@ melody = \relative c'' {
   r g4 g8. g16
   bes4( bes8.) bes16 c8. c16 aes8. c16
   ees2 bes8 r16 bes16 a8. g16
-  d'4 bes8. c16 d4 ees8. d16
-  g,2 r4 r8. bes16
+  d'4 bes8. c16 d4 \acciaccatura f16 ees8. d16
+  g,2 r4 r8. bes16\pp
   bes4 c f, bes
   c8. bes16 ees8. g,16 c4 bes8 r16 bes
   bes4 c f, bes
   c8. bes16 ees8. g,16 bes4( bes8) r
 
-  ees2( ees4) d8. c16
-  d2( d4)( d8.) d16
-  f2( f8.) c16 c8. c16
+  ees2~\f ees4 d8. c16
+  d2~ d4~ d8. d16
+  f2~ f8. c16 c8. c16
   ees2 ees4 r8. ees16
+  g2( f4..) bes,16
+  ees2(~ ees4 d8.) c16
+  bes2~ bes8. bes16 \appoggiatura d16 c8. bes16
+  bes2. r8. ees16
+  f2~f4..
+  <<
+   { bes,16 g'2~ g4 f }
+   \new Staff \with {
+      \remove "Time_signature_engraver"
+      fontSize = #-3
+      \override StaffSymbol.staff-space = #(magstep -3)
+      \override StaffSymbol.thickness = #(magstep -3)
+    }
+   {
+     \key ees \major
+     bes,16 bes'2~ bes8[ aes g] f
+   }
+  >>
+
+  ees2
+  << { d4 ees8.^\markup { \italic "rall." } } { s8. s\turn  } >>
+  f16
+  ees2^\markup { \italic "a tempo" } r2
+  \bar "|."
 }
 
 VerseOne = \lyricmode {
@@ -51,6 +77,22 @@ VerseOne = \lyricmode {
   nel -- le Et de son
   Père ar -- rê -- ter le cour --
   roux
+  Le monde en -- tier tres --
+  sail -- le d'es -- pé -- ran -- ce À
+  cet -- te nuit qui
+  lui donne un Sau -- veur. __
+  Peu -- ple,~à ge --
+  noux, __ at --
+  tends __ ta dé -- li --
+  vran -- ce. No --
+  ël! __ No --
+  ël! __  voi --
+  ci __ le Ré -- demp --
+  teur, No --
+  ël! __ No --
+  ël! __ voi --
+  ci le __ Ré -- demp --
+  teur!
 }
 
 VerseTwo= \lyricmode {
@@ -63,7 +105,12 @@ VerseTwo= \lyricmode {
   Comme au -- tre --
   fois, une é -- toi -- le
   bril -- lan -- te Y con -- dui --
-  sit les chef de l'O -- ri -- ent
+  sit les chef de l'O -- ri -- ent. Le
+  Roi des Rois naît
+  dans une hum -- ble
+  crè che; Puis --
+  sants du jour fier de vo -- tre gran -- deur,
+  À votre or -- gueil c'est de là qu'un Dieu prê -- che;
 }
 
 VerseThree= \lyricmode {
@@ -77,7 +124,16 @@ VerseThree= \lyricmode {
   frère où n'é -- tait qu'un es --
   cla -- ve, L'a -- mour u --
   nit ceux qu'en -- chaî -- nait le
-  fer.
+  fer. Qui
+  lui di -- ra no --
+  tre re -- con -- nais -- san -- ce, C'est
+  pour nous tous qu'il
+  naît, qu'il souffre et meurt. __
+  Peu -- ple, de --
+  bout!
+  Chan -- te ta dé -- li --
+  vran -- ce.
+
 }
 
 \score {
@@ -87,7 +143,7 @@ VerseThree= \lyricmode {
   }
   <<
     % \removeWithTag #'bsqt
-    \new Voice = "mel" { \autoBeamOff \melody }
+    \new Voice = "mel" { \melody }
     \new Lyrics \lyricsto mel \VerseOne
     \new Lyrics \lyricsto mel \VerseTwo
     \new Lyrics \lyricsto mel \VerseThree
