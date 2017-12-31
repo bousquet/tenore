@@ -411,4 +411,94 @@
     \midi {}
     \layout {}
   }
+
+  \score {
+    \header {
+      title = ##f
+      composer = ##f
+      subtitle = "54"
+    }
+    \relative c'' {
+      \key d \major
+      \autoBeamOff
+
+      r4 e8 b gis a b e,
+      b' b b b16 cis d8 d r e16 e
+      fis8 d b cis d cis16 b e8 b
+      cis cis fis, gis16 a a8 e r4
+      r r8 e a a a a16 b
+      cis8 cis d e g,16 g g8 r8 e'16 fis
+      g8 g g g16 e cis8 cis fis cis
+      d16 d d8 r b fis' fis16 fis fis8 fis16 g
+      a8 a r d,16 a b8 cis16 d d8([ a]) \bar "||"
+      r2 r8 g16 g d'8 e
+      f b,16 c d8 b gis gis16 b d d e b
+      c8 c r4 r8 e, a b
+      c c16 c e8 c a4 e'8 e16 f
+      g8 e c r16 e a,8 c c g \bar "||"
+      \key c \major
+      r4 a8 a16 b cis8 d e e
+      r g,16 a bes8 bes g' e cis16 cis d e
+      f16 f r d b8 c d16 d d8 e b
+      c8 c16 a d8 gis,16 a a16. e32 e8 r4
+      r r8 e16 e  a a a gis a8 b
+      c c16 d e e8 a,16 d8 d r4 \bar "||"
+      r2. r8 d
+      d a r4 r2 \bar "|"
+      r4 r8 b fis' fis dis b16 b
+      g'4 r4 r2 \bar "||"
+      r2 r8 b, e b
+      c c r4 r2 \bar "||"
+
+    }
+    \addlyrics {
+      Now up -- on that feast the
+      gov -- er -- nor was ac -- cus -- tomed to re --
+      lease there -- on one pri -- son -- er un -- to
+      them, whom -- ev -- er they want -- ed.
+      Now at that time, and a --
+      mong the oth -- er pri -- son -- ers, was a
+      most no -- tor -- i -- ous man, whose name was
+      Ba -- ra -- bas. And when they were gath -- ered to --
+      ge -- ther, Pi -- late said un -- to them.
+      For he knew full
+      well that it was for en -- vy that He had been de --
+      li -- vered. And while he
+      sat on the judge -- ment seat, then did his
+      wife send him a mes -- sage, say -- ing:
+      Still did the high priests ar -- gue,
+      and the el -- ders, false -- ly to in -- flame the
+      peo -- ple, that there -- by Ba -- ra -- bas be re --
+      leased, and that Je -- sus be cru -- ci -- fied.
+      And the gov -- er -- nor a -- gain re --
+      turned to the peo -- ple, and asked them:
+      They
+      shout -- ed:
+      Then Pi -- late said un -- to
+      them:
+      A -- gain they
+      shout -- ed:
+    }
+    \midi {}
+    \layout {}
+  }
+
+  \score {
+    \header {
+      title = ##f
+      composer = ##f
+      subtitle = "56"
+    }
+    \relative c'' {
+      \key d \major
+      \autoBeamOff
+
+      r8 b b fis16 g a8 g r4
+    }
+    \addlyrics {
+      The gov -- er -- nor an -- aswered:
+    }
+    \midi {}
+    \layout {}
+  }
 }
