@@ -496,7 +496,104 @@
       r8 b b fis16 g a8 g r4
     }
     \addlyrics {
-      The gov -- er -- nor an -- aswered:
+      The gov -- er -- nor an -- swered:
+    }
+    \midi {}
+    \layout {}
+  }
+
+  \score {
+    \header {
+      title = ##f
+      composer = ##f
+      subtitle = "59"
+    }
+    \relative c'' {
+      \key c \major
+      \autoBeamOff
+
+      r8 a a' fis dis dis16 e fis8 b,
+      g' g r4 r2 \bar "||"
+      \key d \major
+      r2 r4 r8 gis,
+      cis cis16 dis eis8 cis gis' gis16 gis eis8 cis
+      a' a r fis16 e dis8 dis16 dis dis8 e
+      fis b, r fis16 gis a8 a r16 a fis' e
+      dis8 dis fis b, gis'4 r8 e
+      e([ b]) r2. \bar "||"
+      r2. r8 cis16 eis
+      gis gis gis gis eis8 cis fis fis r cis
+      d4 r r2 \bar "||"
+      r2 r8 a d e
+      fis fis a fis16 d g4 r8 b,16([ c])
+      d8 d f e e4 r8 b
+      c c16 d e8 a, a' r16 fis dis8 fis
+      g([ fis16]) e e8 b r2 \bar "||"
+    }
+    \addlyrics {
+      But cry -- ing out all the more, they
+      shout -- ed:
+      When Pi -- late, there -- fore, had seen he pre -- vail -- ed
+      noth -- ing, but that rath -- er a -- rose a
+      to -- mult, he took wa -- ter, and washed his
+      hands be -- fore them all and
+      said:
+      Then to --
+      ge -- ther all the peo -- ple an -- swered, and
+      said:
+      And Pi -- late
+      then set Ba -- rab -- bas free, but
+      Je -- sus he had scourged; and
+      then he de -- li -- vered Him, that they might
+      cru -- ci -- fy Him.
+    }
+    \midi {}
+    \layout {}
+  }
+
+  \score {
+    \header {
+      title = ##f
+      composer = ##f
+      subtitle = "62"
+    }
+    \relative c'' {
+      \key bes \major
+      \autoBeamOff
+
+      r8 f a, a16 bes c8 c16 c c8 d
+      ees ees g ees c a f' c
+      d4 r8 bes d d16 d d8 ees
+      f f d bes g' r16 ees bes8 bes16 c
+      des8 des r16 bes g aes bes8 g e16 e f g
+      aes8 aes r8 c f16 f f d b8 c
+      d4 r8 d b a16 g g'8 d
+      ees r r ees16 c a8 g16 fis d'8([ a])
+      bes4 r8 d d bes g a
+      bes16  g e8 r8 r16 e cis'8. d16 e8 r16 a,
+      \key f \major
+      f'4 r r2 \bar "||"
+      r4 r8 a,16 a g'8 g g e
+      fis r16 d a8 a ees' r r d
+      g e16 d cis8 f \appoggiatura e8 d4 r \bar "|."
+    }
+    \addlyrics {
+      The guards of the gov -- er -- nor came, and
+      they took Je -- sus to the com -- mon
+      hall, and
+      ga -- thered a -- round him
+      all the sol -- dier band And then they did
+      strip Him, and brought a scar -- let robe and put it
+      on Him; and plat -- ted Him a crown of
+      thorns, and put it up -- on His
+      head, and a reed in His right
+      Hand; and bowed the knee be --
+      fore Him low, and mocked at him and
+      said:
+      And they spat up -- on His
+      face and took the reed, and
+      smote Him up -- on His head.
+
     }
     \midi {}
     \layout {}
