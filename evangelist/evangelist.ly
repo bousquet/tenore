@@ -49,7 +49,9 @@
       And then all the di -- ci -- ples for -- sook Him, and fled._
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
   \score {
     \header {
@@ -98,7 +100,9 @@
       none.
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -134,7 +138,9 @@
       Je -- sus still si -- lent.
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -170,7 +176,9 @@
       an -- swered to him and said:
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -197,7 +205,9 @@
       face. and shou -- ted:
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -246,7 +256,9 @@
       and said to_ Pe -- ter:
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -286,7 +298,9 @@
       bit -- ter -- ly.
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -331,7 +345,9 @@
       They said:
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -362,7 +378,9 @@
       said
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -409,7 +427,9 @@
       nor mar -- velled great -- ly.
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -480,7 +500,9 @@
       shout -- ed:
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -499,7 +521,12 @@
       The gov -- er -- nor an -- swered:
     }
     \midi {}
-    \layout {}
+    \layout {
+    \context {
+      \Staff
+      \consists "Ambitus_engraver"
+    }
+  }
   }
 
   \score {
@@ -548,7 +575,9 @@
       cru -- ci -- fy Him.
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -596,7 +625,9 @@
 
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -624,7 +655,12 @@
       cru -- ci -- fied.
     }
     \midi {}
-    \layout {}
+    \layout {
+    \context {
+      \Staff
+      \consists "Ambitus_engraver"
+    }
+  }
   }
 
   \score {
@@ -685,7 +721,9 @@
       and was gone.
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -755,7 +793,9 @@
       gi -- ven to him.
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 
   \score {
@@ -813,6 +853,8 @@
       stone.
     }
     \midi {}
-    \layout {}
+    \layout {
+      \context { \Staff \consists "Ambitus_engraver" }
+    }
   }
 }
