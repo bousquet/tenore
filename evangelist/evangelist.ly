@@ -2,6 +2,7 @@
 
 \include "34.ly"
 \include "37.ly"
+\include "39.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -21,44 +22,10 @@
   \scoreThirtySeven
   \midiThirtySeven
 
-  %{ \score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "39"
-    }
-    \relative c'' {
-      \key f \major
-      \autoBeamOff
+  \scoreThirtyNine
+  \midiThirtyNine
 
-      r4 r8 a16 bes c8 c16 d ees8 c
-      a a d a bes4 a16 bes c bes
-      g8 r r d' g r cis,8. d16
-      e8 a, g' f f f r d
-      d a r4 r2 \bar "||"
-      r2 r4 r8 f bes c d c16 bes g'8 g, a bes
-      bes8[( f)] r4 r2 \bar "||"
-      r2 r4 g'8 d
-      ees4 fis,8 g g d r4 \bar "|."
-    }
-    \addlyrics {
-      Yea, though ma -- ny a false and
-      ly -- ing wit -- ness came, they could find them
-      none. At last two there
-      came who false -- ly wit -- nessed, in
-      this wise:
-      The
-      high priest then did a -- rise and say to
-      Him:_
-      Yet was
-      Je -- sus still si -- lent.
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
-
+  %{
   \score {
     \header {
       title = ##f
