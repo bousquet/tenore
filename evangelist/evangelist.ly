@@ -4,6 +4,7 @@
 \include "37.ly"
 \include "39.ly"
 \include "42.ly"
+\include "43.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -29,37 +30,10 @@
   \scoreFortyTwo
   \midiFortyTwo
 
+  \scoreFortyThree
+  \midiFortyThree
+
   %{
-
-  \score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "43"
-    }
-    \relative c'' {
-      \key c \major
-      \autoBeamOff
-
-      r8 g c c16 d e8 e16 f g8 e
-      c4 r8 c aes' f b, ees
-      c4 r r e8 g,16 g
-      g8 a bes g cis cis d e
-      f4 r8 d d a r4 \bar "|."
-    }
-    \addlyrics {
-      Then mocked they at Him, and they spat on
-      Him, and struck Him with their
-      fists. Oth -- ers a --
-      mong them smote and slapped Him in His
-      face. and shou -- ted:
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
-
   \score {
     \header {
       title = ##f
