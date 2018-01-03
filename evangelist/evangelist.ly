@@ -3,6 +3,7 @@
 \include "34.ly"
 \include "37.ly"
 \include "39.ly"
+\include "42.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -25,44 +26,10 @@
   \scoreThirtyNine
   \midiThirtyNine
 
-  %{
-  \score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "42"
-    }
-    \relative c'' {
-      \key g \major
-      \autoBeamOff
+  \scoreFortyTwo
+  \midiFortyTwo
 
-      r8. b16 e8 fis g g c, c16 d
-      e8 c a d b4 r \bar "||"
-      r2 fis'8 d cis b
-      e4 r2. \bar "||"
-      r4 r8 b16 e, d'8 d d e
-      f d b c d d r e
-      c4 r4 r2 \bar "||"
-      r2 r4 r8 b
-      fis' fis16 fis dis8 b g'4 r \bar "|."
-    }
-    \addlyrics {
-      And then the high priest gave Him an
-      an -- swer thus, and said:
-      Je -- sus saith to
-      him:
-      There up -- on the high priest
-      tore his robes
-      a -- sun -- der, and
-      said:
-      They
-      an -- swered to him and said:
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
+  %{
 
   \score {
     \header {
