@@ -1,5 +1,5 @@
-mvmtThirtyFour = \relative c'' {
-  \clef tenorG
+vocalThirtyFour = \relative c' {
+  \clef "G_8"
   \key d \major
   \autoBeamOff
 
@@ -20,7 +20,7 @@ mvmtThirtyFour = \relative c'' {
   \bar "|."
 }
 
-lyricsThirtyFour = \lyricmode {
+lyricThirtyFour = \lyricmode {
   Be -- hold then!
   One of His dis -- ci -- ples which were there with
   Je -- sus, draw -- ing his sword forth, he
@@ -68,25 +68,25 @@ lowerThirtyFour = \relative c {
   << gis'1 e cis >>
 }
 
-thirtyFour = \score {
+scoreThirtyFour = \score {
   \header {
     title = ##f
     composer = ##f
     subtitle = "34"
   }
   <<
-    \new Voice = "vocalThirtyFour" \with {
+    \new Voice = "mel" \with {
       \consists "Ambitus_engraver"
-    } { \mvmtThirtyFour }
-    \new Lyrics \lyricsto vocalThirtyFour \lyricsThirtyFour
+    } { \vocalThirtyFour }
+    \new Lyrics \lyricsto mel \lyricThirtyFour
   >>
   \layout {}
 }
 
-thirtyFourMidi = \score {
+midiThirtyFour = \score {
   <<
-    \new Voice = "vocalThirtyFour" { \mvmtThirtyFour }
-    \new Lyrics \lyricsto vocalThirtyFour \lyricsThirtyFour
+    \new Voice = "mel" { \vocalThirtyFour }
+    \new Lyrics \lyricsto mel \lyricThirtyFour
     \new PianoStaff <<
       \new Staff = "upper" { \upperThirtyFour }
       \new Staff = "lower" { \lowerThirtyFour }
