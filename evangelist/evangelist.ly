@@ -15,6 +15,7 @@
 
 \book {
   \thirtyFour
+  \thirtyFourMidi
 
   %{ \score {
     \header {

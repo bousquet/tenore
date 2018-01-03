@@ -16,6 +16,7 @@ mvmtThirtyFour = \relative c'' {
 
   r2 r8 cis16 d e8 fis16 gis
   a8 fis16 dis bis8 bis16 cis cis8[( gis)] r4
+  r1
   \bar "|."
 }
 
@@ -35,11 +36,18 @@ upperThirtyFour = \relative c' {
   \clef treble
   \key d \major
 
-  << fis cis fis, >> r r2
+  << fis4 cis fis, >> r r2
   r1
   << fis'4 d b >> r << a' e a, >> r
   r2 << fis'4 d a >> << fis' d gis, >>
   r << eis' cis gis >> << fis' cis a >> r
+  r2 r4 << e'' b e, >>
+  r1
+  << gis4 e cis >> r r2
+  r4 << cis'2. fis, cis >>
+  r4 << gis'' e d b >> << a' e cis a >> r
+  << dis, cis a >> r r << dis bis >>
+  cis1
 }
 
 lowerThirtyFour = \relative c {
@@ -51,6 +59,13 @@ lowerThirtyFour = \relative c {
   b4 r a r
   r2 d4 b
   r cis fis, r
+  r2 << gis2 gis, >>
+  r1
+  cis'4 r r2
+  << ais1 ais, >>
+  r4 << e' e' >> << a, a, >> r
+  fis' r r << fis' gis, >>
+  << gis'1 e cis >>
 }
 
 thirtyFour = \score {
@@ -62,16 +77,20 @@ thirtyFour = \score {
   <<
     \new Voice = "vocalThirtyFour" \with {
       \consists "Ambitus_engraver"
-    } { \mvmtThirtyFour  }
+    } { \mvmtThirtyFour }
+    \new Lyrics \lyricsto vocalThirtyFour \lyricsThirtyFour
+  >>
+  \layout {}
+}
+
+thirtyFourMidi = \score {
+  <<
+    \new Voice = "vocalThirtyFour" { \mvmtThirtyFour }
     \new Lyrics \lyricsto vocalThirtyFour \lyricsThirtyFour
     \new PianoStaff <<
-      \new Staff = "upper" \upperThirtyFour
-      \new Staff = "lower" \lowerThirtyFour
+      \new Staff = "upper" { \upperThirtyFour }
+      \new Staff = "lower" { \lowerThirtyFour }
     >>
   >>
-
   \midi {}
-  \layout {
-    %{ \context { \Staff \consists "Ambitus_engraver" } %}
-  }
 }
