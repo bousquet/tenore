@@ -1,9 +1,11 @@
 \version "2.18.2"
 
+\include "34.ly"
+
 \header {
   title = "St Matthew's Passion"
   composer = "J.S. Bach"
-  tagline   = \markup {\smallCaps "~ Robert Bousquet ~"}
+  tagline = \markup { \smallCaps "~ Robert Bousquet ~" }
 }
 
 \paper {
@@ -12,48 +14,9 @@
 }
 
 \book {
-  \score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "34"
-    }
-    \relative c'' {
-      \key d \major
-      \autoBeamOff
+  \thirtyFour
 
-      r4 r8 cis fis fis r4
-      ais,16 ais ais b cis8 fis, r cis'16 d e8 d
-      d d r16 b cis d e8 g r e
-      cis a a' e g16 fis8 d16 gis8 eis16 fis
-      cis4 r r a8 b
-      cis4 b8 a e'4 r \bar "||"
-      r1 \bar "||"
-
-      r8 gis,16 gis cis8 dis e e gis cis,16 cis
-      fis8 fis r2. \bar "||"
-
-      r2 r8 cis16 d e8 fis16 gis
-      a8 fis16 dis bis8 bis16 cis cis8[( gis)] r4
-      \bar "|."
-    }
-    \addlyrics {
-      Be -- hold then!
-      One of His dis -- ci -- ples which were there with
-      Je -- sus, draw -- ing his sword forth, he
-      struck the high priest's ser -- vent, and smote off his
-      ear. Then said
-      Je -- sus to him:
-      In that same hour Je -- sus said to the
-      peo -- ple:
-      And then all the di -- ci -- ples for -- sook Him, and fled._
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
-  \score {
+  %{ \score {
     \header {
       title = ##f
       composer = ##f
@@ -856,5 +819,5 @@
     \layout {
       \context { \Staff \consists "Ambitus_engraver" }
     }
-  }
+  } %}
 }
