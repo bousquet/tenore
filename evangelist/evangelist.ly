@@ -7,6 +7,7 @@
 \include "43.ly"
 \include "45.ly"
 \include "46.ly"
+\include "49.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -41,54 +42,10 @@
   \scoreFortySix
   \midiFortySix
 
+  \scoreFortyNine
+  \midiFortyNine
+
   %{\score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "49"
-    }
-    \relative c'' {
-      \key d \major
-      \autoBeamOff
-
-      r4 r8 cis fis gis a fis
-      d d16 e fis8 d b b b cis
-      d gis, gis a b b16 gis16 eis8 d'16 cis
-      a8 a r cis fis dis bis bis
-      r gis bis bis16 cis dis8 dis bis16 cis dis e
-      fis8 fis16 gis a8 gis fis fis16 e dis8 e16 e
-      fis8 e16 dis gis8 dis e e r gis,
-      cis dis e e r a, a16 e e fis
-      g8 g r cis, ais' ais16 b cis8 d
-      e[( g,)] r ais16 ais g'8 g g fis
-      d r16 fis, b8 b16 ais b8 cis d b
-      e8. b16 gis8 gis16 a b8 e fis fis16 e
-      cis8 cis4 a8 e'4 r \bar "||"
-      r4 r8 b fis'4 r \bar "|."
-    }
-    \addlyrics {
-      Now when the morn -- ing
-      came, all the chief priests gath -- ered with the
-      el -- ders of the peop -- ple to plot ag -- ainst
-      Je -- sus, that they might kill Him.
-      And when they had bound Him, they led Him a --
-      way, and de -- liv -- ered Him to the court of the
-      gov -- er -- nor, Pon -- tious Pi -- late. When,
-      there -- fore, Ju -- das the same who had
-      be -- trayed Him saw Je -- sus con -- demned to
-      death he re -- pen -- ted of him --
-      self, and brought once a -- gain the thir -- ty
-      sil -- ver pie -- ces to the high priests and the
-      eld -- ers, and said:
-      They said:
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
-
-  \score {
     \header {
       title = ##f
       composer = ##f
