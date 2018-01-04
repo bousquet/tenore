@@ -9,6 +9,7 @@
 \include "46.ly"
 \include "49.ly"
 \include "50.ly"
+\include "52.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -49,58 +50,10 @@
   \scoreFifty
   \midiFifty
 
-  %{
+  \scoreFiftyTwo
+  \midiFiftyTwo
 
-  \score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "52"
-    }
-    \relative c'' {
-      \key g \major
-      \autoBeamOff
-
-      r2 g'8 ees c d
-      ees ees d c fis16 fis fis8 r fis,16 g
-      a8 a16 bes c8 fis16 c d4 r4 \bar "||"
-      \key f \major
-      r2. g8 d
-      b d d g, ees'4 r \bar "||"
-      r2 r8 g,16 g c8 c16 d
-      e4 r8 c16 d e8 f g g16 e
-      cis4 cis r8 d g,8. f16
-      d8 d r4 r r8 a'
-      d e f d16 b e4 r \bar "||"
-      r2. r8 gis,16 a
-      \key c \major
-      b8 b b cis d cis16 b gis'8 r16 cis,
-      a8 r8 r a16 a d8 d16 d fis8 d
-      b4 cis8 d d a4. \bar "|."
-    }
-    \addlyrics {
-      Je -- sus there -- fore
-      stood be -- fore the gov -- er -- nor; and the
-      gov -- er -- nor asked Him, and said:
-      Je -- sus
-      an -- swered un -- to him:
-      But when He was ac --
-      cused when the priests and eld -- ers ac --
-      cused Him He an -- swered
-      noth -- ing. Then
-      Pi -- late said un -- to Him:
-      And He
-      an -- swered him to nev -- er a word, not
-      one in -- so -- much that the gov -- er
-      nor mar -- velled great -- ly.
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
-
-  \score {
+  %{\score {
     \header {
       title = ##f
       composer = ##f
