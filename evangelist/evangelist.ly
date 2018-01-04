@@ -8,6 +8,7 @@
 \include "45.ly"
 \include "46.ly"
 \include "49.ly"
+\include "50.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -45,38 +46,10 @@
   \scoreFortyNine
   \midiFortyNine
 
-  %{\score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "50"
-    }
-    \relative c'' {
-      \key g \major
-      \autoBeamOff
+  \scoreFifty
+  \midiFifty
 
-      r4 r8 d16 b gis8 gis f' f
-      f d e b c c r16 a c e
-      a4 r8 fis16 fis fis8[ b,] r dis16 fis
-      g8([ e] ais,) g' \appoggiatura fis e4 r
-      r b8 b16 c d8 d g d
-      b a16 g f'8 e e e r c
-      c([ g]) r2. \bar "||"
-    }
-    \addlyrics {
-      Then he cast the sil -- ver
-      pie -- ces in the tem -- ple, and turned a --
-      way, and went out; and he
-      hanged __ him -- self.
-      And when the priests had ga -- thered
-      all of the sil -- ver pie -- ces, they
-      said
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
+  %{
 
   \score {
     \header {
