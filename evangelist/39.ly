@@ -11,7 +11,7 @@ vocalThirtyNine = \relative c' {
   r2 r4 r8 f bes c d c16 bes g'8 g, a bes
   bes8[( f)] r4 r2 \bar "||"
   r2 r4 g'8 d
-  ees4 fis,8 g g d r4
+  f8([ ees]) fis,8 g g d r4
   r1 \bar "|."
 }
 
