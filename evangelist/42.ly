@@ -8,8 +8,8 @@ vocalFortyTwo = \relative c' {
   r2 fis'8 d cis b
   e4 r2. \bar "||"
   r4 r8 b16 e, d'8 d d e
-  f d b c d d r e
-  c4 r4 r2 \bar "||"
+  f d b c d d r e,
+  c'4 r4 r2 \bar "||"
   r2 r4 r8 b
   fis' fis16 fis dis8 b g'4 r \bar "|."
 }
