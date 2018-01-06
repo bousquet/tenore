@@ -14,6 +14,7 @@
 \include "56.ly"
 \include "59.ly"
 \include "62.ly"
+\include "64.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -68,6 +69,9 @@
 
   \scoreSixtyTwo
   \midiSixtyTwo
+
+  \scoreSixtyFour
+  \midiSixtyFour
 
   %{\score {
     \header {
