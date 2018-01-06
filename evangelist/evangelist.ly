@@ -13,6 +13,7 @@
 \include "54.ly"
 \include "56.ly"
 \include "59.ly"
+\include "62.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -65,57 +66,10 @@
   \scoreFiftyNine
   \midiFiftyNine
 
+  \scoreSixtyTwo
+  \midiSixtyTwo
+
   %{\score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "62"
-    }
-    \relative c'' {
-      \key bes \major
-      \autoBeamOff
-
-      r8 f a, a16 bes c8 c16 c c8 d
-      ees ees g ees c a f' c
-      d4 r8 bes d d16 d d8 ees
-      f f d bes g' r16 ees bes8 bes16 c
-      des8 des r16 bes g aes bes8 g e16 e f g
-      aes8 aes r8 c f16 f f d b8 c
-      d4 r8 d b a16 g g'8 d
-      ees r r ees16 c a8 g16 fis d'8([ a])
-      bes4 r8 d d bes g a
-      bes16  g e8 r8 r16 e cis'8. d16 e8 r16 a,
-      \key f \major
-      f'4 r r2 \bar "||"
-      r4 r8 a,16 a g'8 g g e
-      fis r16 d a8 a ees' r r d
-      g e16 d cis8 f \appoggiatura e8 d4 r \bar "|."
-    }
-    \addlyrics {
-      The guards of the gov -- er -- nor came, and
-      they took Je -- sus to the com -- mon
-      hall, and
-      ga -- thered a -- round him
-      all the sol -- dier band And then they did
-      strip Him, and brought a scar -- let robe and put it
-      on Him; and plat -- ted Him a crown of
-      thorns, and put it up -- on His
-      head, and a reed in His right
-      Hand; and bowed the knee be --
-      fore Him low, and mocked at him and
-      said:
-      And they spat up -- on His
-      face and took the reed, and
-      smote Him up -- on His head.
-
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
-
-  \score {
     \header {
       title = ##f
       composer = ##f
