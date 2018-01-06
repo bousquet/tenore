@@ -12,6 +12,7 @@
 \include "52.ly"
 \include "54.ly"
 \include "56.ly"
+\include "59.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -61,58 +62,10 @@
   \scoreFiftySix
   \midiFiftySix
 
+  \scoreFiftyNine
+  \midiFiftyNine
+
   %{\score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "59"
-    }
-    \relative c'' {
-      \key c \major
-      \autoBeamOff
-
-      r8 a a' fis dis dis16 e fis8 b,
-      g' g r4 r2 \bar "||"
-      \key d \major
-      r2 r4 r8 gis,
-      cis cis16 dis eis8 cis gis' gis16 gis eis8 cis
-      a' a r fis16 e dis8 dis16 dis dis8 e
-      fis b, r fis16 gis a8 a r16 a fis' e
-      dis8 dis fis b, gis'4 r8 e
-      e([ b]) r2. \bar "||"
-      r2. r8 cis16 eis
-      gis gis gis gis eis8 cis fis fis r cis
-      d4 r r2 \bar "||"
-      r2 r8 a d e
-      fis fis a fis16 d g4 r8 b,16([ c])
-      d8 d f e e4 r8 b
-      c c16 d e8 a, a' r16 fis dis8 fis
-      g([ fis16]) e e8 b r2 \bar "||"
-    }
-    \addlyrics {
-      But cry -- ing out all the more, they
-      shout -- ed:
-      When Pi -- late, there -- fore, had seen he pre -- vail -- ed
-      noth -- ing, but that rath -- er a -- rose a
-      to -- mult, he took wa -- ter, and washed his
-      hands be -- fore them all and
-      said:
-      Then to --
-      ge -- ther all the peo -- ple an -- swered, and
-      said:
-      And Pi -- late
-      then set Ba -- rab -- bas free, but
-      Je -- sus he had scourged; and
-      then he de -- li -- vered Him, that they might
-      cru -- ci -- fy Him.
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
-
-  \score {
     \header {
       title = ##f
       composer = ##f
