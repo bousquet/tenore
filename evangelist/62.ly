@@ -3,7 +3,7 @@ vocalSixtyTwo = \relative c' {
   \key bes \major
   \autoBeamOff
 
-  r8 f a, a16 bes c8 c16 c c8 d
+  r8 f, a a16 bes c8 c16 c c8 d
   ees ees g ees c a f' c
   d4 r8 bes d d16 d d8 ees
   f f d bes g' r16 ees bes8 bes16 c

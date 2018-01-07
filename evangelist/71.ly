@@ -16,7 +16,7 @@ vocalSeventyOne = \relative c' {
   d r16 f f8([ aes,]) r ges16 bes ees8([ d16]) ees
   f16. f32 f8 r4 r f,8 f
   bes bes bes c d d r16 d ees f
-  f8 bes, r d16 g, ees'4 r \bar "||"
+  f8 b, r d16 g, ees'4 r \bar "||"
   \key bes \major
   r8 f, f g a16 a a bes c4
   r8 f, c' d ees4 r8 c
@@ -66,7 +66,7 @@ upperSeventyOne = \relative c' {
   << bes'2 f des >> << ges ees bes >>
   << ges' ees c a >> << f'4 des bes >> << bes' f bes, >>
   << a' f c >>  r << aes' f bes, >> r
-  << ges'2 ees bes >> << aes' ees c >>
+  << ges'2 ees bes >> << aes' ees ces >>
   << aes' f d ces >> << ges'4 ees bes >> << aes' ees aes, >>
   << f' d bes >> r r2
   r << f'4 d bes >> r
@@ -79,9 +79,9 @@ upperSeventyOne = \relative c' {
   << f' ees c >> r << f d bes >> << g' ees bes >>
   << f' c >> ees r16 d fis a d c bes a
   \tempo 4 = 30
-  << d4 bes >> r r << a( f( d( >>
-  << a') f) d) >> r << gis e b >> r
-  << a' d, a >> r << ees' d gis, >> << ees' c a >>
+  << d4 bes >> r r <a f d>4~
+  <a f d> r << gis e b >> r
+  << a' d, a >> r << gis' d b >> << a' c, >>
 }
 
 lowerSeventyOne = \relative c {
@@ -109,9 +109,9 @@ lowerSeventyOne = \relative c {
   r2 d4 ees
   aes r bes ees,
   a r << bes,8 fis >> a' fis d
-  << g4 g, >> r r d'(
-  d) r r2
-  f4 r ees a,
+  << g4 g, >> r r d'~
+  d r r2
+  f4 r e a,
 }
 
 scoreSeventyOne = \score {

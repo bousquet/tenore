@@ -36,7 +36,7 @@ upperFortySix = \relative c' {
   \clef treble
   \key d \major
 
-  \partial 4 << cis'4 g cis, >>
+  \partial 4 << cis'4 gis cis, >>
   r1
   r2 << a'4 fis cis >> << fis cis >>
   << fis d >> << b' fis b, >>  << gis' eis cis >> << a' fis cis >>
