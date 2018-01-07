@@ -99,7 +99,7 @@
       ees8) d r4 r8 d a' bes
       c d ees d16 c fis8 g a c,
       c bes r g e'16 e e f g8 f16([ e])
-      d8 cis r a16 d g8 f d d
+      d8 cis r a'16 d, g8 f \parenthesize e d
       r4 a8 a16 bes c8 f, r f'16 c
       a8 bes c c r f,16 g a8 f
       d d r fis16 a c8. d16 ees8 a,16 bes
