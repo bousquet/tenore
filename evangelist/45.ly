@@ -5,14 +5,14 @@ vocalFortyFive = \relative c' {
 
   a'8 e cis d e a,16 a g'8 f
   f r a, a d e f e16 d
-  b4 r8 g' e4 r \bar "||"
+  \parenthesize c8([ b8]) r8 g' e4 r \bar "||"
   r2 r8 c ees ees16 f
   g8 ees16 d c8 a f'4 r8 c
   d4 r2. \bar "||"
   r4 r8 g,16 g c8 c16 d e8 c
   g' bes, r d16 bes g8 g16 a bes8 a
   a r16 a d8 e f f f e
-  c c r2. \bar "||"
+  \parenthesize d c r2. \bar "||"
   r2. r8 b16 b
   a'8 a16 fis dis fis b,8 r b fis' a
   g4 r2. \bar "||"

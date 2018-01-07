@@ -6,7 +6,7 @@ vocalFifty = \relative c' {
   r4 r8 d16 b gis8 gis f' f
   f d e b c c r16 a c e
   a4 r8 fis16 fis fis8[ b,] r dis16 fis
-  g8([ e] ais,) g' \appoggiatura fis e4 r
+  g8([ e] ais,) g' \parenthesize fis8([ e]) r4
   r b8 b16 c d8 d g d
   b a16 g f'8 e e e r c
   c([ g]) r2. \bar "||"

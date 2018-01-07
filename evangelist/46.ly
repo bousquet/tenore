@@ -7,7 +7,7 @@ vocalFortySix = \relative c' {
   r8 gis cis dis eis eis eis fis
   gis gis eis cis a' a r4 \bar "||"
   r2. r8 cis,
-  a'8. a16 a[( gis)] fis[( e)] \appoggiatura dis8 cis4 r
+  a'8. a16 a[( gis)] fis[( e)] \parenthesize dis8([ cis8]) r4
   r4 r8 e ais, ais ais b
   cis fis, e' d d d r b
   d d16 e fis4 r d8 d16 e
@@ -46,7 +46,7 @@ upperFortySix = \relative c' {
   r1
   r4 << a'2 d, c >> r4
   << g' d b >> r << g' cis, a >> << fis' d a >>
-  << gis' d gis, >> r r << fis' cis a >>
+  << gis' d gis, >> \tempo 4 = 45  r r << fis' cis a >>
   << fis' bis, a >> << fis' dis a >> r2
   << eis'4 cis gis >> << fis' cis a >> r2
 }

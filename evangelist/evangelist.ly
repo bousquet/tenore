@@ -77,7 +77,7 @@
   \scoreSeventyOne
   \midiSeventyOne
 
-  %{\score {
+  \score {
     \header {
       title = ##f
       composer = ##f
@@ -165,11 +165,11 @@
       aes f d4 g8 g16 a b8 c
       d d16 ees f8 g aes r r f
       b, b16 c d f, f g aes8 aes16 f d8 f16 f
-      \appoggiatura f8 ees4 r16 g b ees \appoggiatura d8 c4 r
+      \parenthesize f8([ ees]) r16 g b ees \parenthesize d8([ c]) r4
       r g'8 ees c c16 c c8 d
       ees ees d c f f r f16 c
       a8 bes c f, r4 r8 f16 f
-      d'8 d16 b g8 a16 bes bes8([ f]) r4
+      d'8 d16 bes g8 a16 bes bes8([ f]) r4
       r8 bes d ees f f r bes,
       f f16 g aes aes f f d8 d bes' bes16 c16
       d8 ees f f16 d b8 c d g,
@@ -207,5 +207,5 @@
     \layout {
       \context { \Staff \consists "Ambitus_engraver" }
     }
-  } %}
+  }
 }

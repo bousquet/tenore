@@ -26,7 +26,7 @@ vocalSeventyOne = \relative c' {
   g c, ees d d d r4 \bar "||"
   r2 r4 r8 a16 a
   d8 d f d b b gis'4
-  r8 d16 c b8([ a]) r2 \bar "|."
+  r8 d16 c \parenthesize b8([ a]) r2 \bar "|."
 }
 
 lyricSeventyOne = \lyricmode {
