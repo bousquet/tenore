@@ -10,7 +10,7 @@ vocalFortyFive = \relative c' {
   g8 ees16 d c8 a f'4 r8 c
   d4 r2. \bar "||"
   r4 r8 g,16 g c8 c16 d e8 c
-  g' bes, r d16 b g8 g16 a b8 a
+  g' bes, r d16 bes g8 g16 a bes8 a
   a r16 a d8 e f f f e
   c c r2. \bar "||"
   r2. r8 b16 b
