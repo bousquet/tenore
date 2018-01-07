@@ -91,12 +91,12 @@
       bes g16 f e8 cis16 d a8 cis16 e g8 r
       r a f d b4 r16 c f, e
       c4 r r8 c'16 g e8 e16 g
-      bes8. bes16( bes4) r8 bes16 d g8 a16 bes
+      bes8. bes16~ bes4 r8 bes16 d g8 a16 bes
       bes8 des, r4 r des8 c
       aes f aes c16 f a4 r8 c,
       b c d ees f8([ c]) ees d
-      d16 bes g8 r aes16 g ees2(
-      ees8) d r4 r8 d a' bes
+      d16 bes g8 r aes16 g ees2~
+      ees8 d r4 r8 d a' bes
       c d ees d16 c fis8 g a c,
       c bes r g e'16 e e f g8 f16([ e])
       d8 cis r a'16 d, g8 f \parenthesize e d

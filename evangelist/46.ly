@@ -13,8 +13,8 @@ vocalFortySix = \relative c' {
   d d16 e fis4 r d8 d16 e
   fis8 d16[( fis a8)] c,4 r16 a d8 a
   b[( cis16)] d d8 a r4 r8 fis'
-  gis16 a b8 r \autoBeamOn gis eis\( \melisma fis( fis16) e d cis
-  bis8 a'( a16)\) gis fis \melismaEnd e \autoBeamOff dis8[( eis16)] fis fis8[( cis)]
+  gis16 a b8 r \autoBeamOn gis eis\( \melisma fis~ fis16 e d cis
+  bis8 a'~ a16\) gis fis \melismaEnd e \autoBeamOff dis8[( eis16)] fis fis8[( cis)]
   r1 \fermata \bar "|."
 }
 

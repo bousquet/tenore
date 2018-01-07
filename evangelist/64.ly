@@ -8,7 +8,7 @@ vocalSixtyFour = \relative c' {
   dis r16 b a'8 a16 fis dis8 fis fis b,
   g'16 g r g b,8 a16 g f'8 r16 d b8 d
   \tempo 4 = 30
-  ees[( \melisma ees32) d c b] c4( \melismaEnd c16) g g8 r4
+  ees~[ \melisma ees32 d c b] c4~ \melismaEnd c16 g g8 r4
   r1 \bar "|."
 
 }

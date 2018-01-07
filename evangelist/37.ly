@@ -14,7 +14,7 @@ vocalThirtySeven = \relative c' {
   b'8 b16 b b8 c d d r g,
   d' e f4 r8 e8 a, b16 c
   c8 g r4 r8 g c d
-  e e c d16 e f8. f16( f8) a,
+  e e c d16 e f8. f16~ f8 a,
   a a16 bes c8 a f a16 c ees8 d
   d a c bes bes bes r d
   ees c16 a fis8. a16 bes8 r16 d g8 f

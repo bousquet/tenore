@@ -4,7 +4,7 @@ vocalSeventyOne = \relative c' {
   \autoBeamOff
 
   r4 r8 ees, g aes bes([ c])
-  des([ bes]) r des16 ees fes8. fes16( fes4)
+  des([ bes]) r des16 ees fes8. fes16~ fes4
   fes8 des c bes ees4 r8 aes,
   f aes des([ c]) bes8([ aes]) r4
   r r8 aes16 aes c8 c c([ des])
