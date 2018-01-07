@@ -165,5 +165,4 @@ midiSeventyThree = \score {
     >>
   >>
   \midi {}
-  \layout {}
 }

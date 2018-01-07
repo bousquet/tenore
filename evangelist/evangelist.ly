@@ -30,7 +30,7 @@
 }
 
 \book {
-  %{ \scoreThirtyFour
+  \scoreThirtyFour
   \midiThirtyFour
 
   \scoreThirtySeven
@@ -76,14 +76,14 @@
   \midiSixtyFour
 
   \scoreSeventyOne
-  \midiSeventyOne %}
+  \midiSeventyOne
 
-  %{ \scoreSeventyThree %}
+  \scoreSeventyThree
   \midiSeventyThree
 
-  %{ \score {
+  \score {
     \header {
-      title = ##f;
+      title = ##f
       composer = ##f
       subtitle = "76"
     }
@@ -139,5 +139,5 @@
     \layout {
       \context { \Staff \consists "Ambitus_engraver" }
     }
-  } %}
+  }
 }
