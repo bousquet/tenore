@@ -15,6 +15,7 @@
 \include "59.ly"
 \include "62.ly"
 \include "64.ly"
+\include "71.ly"
 
 \header {
   title = "St Matthew's Passion"
@@ -73,103 +74,10 @@
   \scoreSixtyFour
   \midiSixtyFour
 
+  \scoreSeventyOne
+  \midiSeventyOne
+
   %{\score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "64"
-    }
-    \relative c'' {
-      \key c \major
-      \autoBeamOff
-
-      r8 e e b d d f e
-      c c a a16 b c8 d e a,
-      dis r16 b a'8 a16 fis dis8 fis fis b,
-      g'16 g r g b,8 a16 g f'8 r16 d b8 d
-      ees[( \melisma ees32) d c b] c4( \melismaEnd c16) g g8 r4 \bar "|."
-
-    }
-    \addlyrics {
-      And af -- ter they had mocked Him
-      thus, they took off from Him the scar -- let
-      robe, and clothed Him a -- gain in His own
-      rai -- ment, and led Him a -- way that He be
-      cru -- ci -- fied.
-    }
-    \midi {}
-    \layout {
-    \context {
-      \Staff
-      \consists "Ambitus_engraver"
-    }
-  }
-  }
-
-  \score {
-    \header {
-      title = ##f
-      composer = ##f
-      subtitle = "71"
-    }
-    \relative c'' {
-      \key ees \major
-      \autoBeamOff
-
-      r4 r8 ees, g aes bes([ c])
-      des([ bes]) r des16 ees fes8. fes16( fes4)
-      fes8 des c bes ees4 r8 aes,
-      f aes des([ c]) aes4 r
-      r r8 aes16 aes c8 c c([ des])
-      ees ees16 f ges8 ees a4 r8 f
-      des4 r2. \bar "||"
-      r2 r8 bes8 f' r
-      r4 ges8([ ees]) ces4 aes'8([ f])
-      d r16 f f8([ aes,]) r ges16 bes ees8([ d16]) ees
-      f16. f32 f8 r4 r f,8 f
-      bes bes bes c d d r16 d ees f
-      f8 bes, r d16 g, ees'4 r \bar "||"
-      \key bes \major
-      r8 f, f g a16 a a bes c4
-      r8 f, c' d ees4 r8 c
-      a g16 f f'8 c d16 d d8 r bes
-      f' f16 f f8 g aes4 r8 g
-      c, d16 ees ees8([ bes]) r4 r8 g'
-      g c, ees d d d r4 \bar "||"
-      r2 r4 r8 a16 a
-      d8 d f d b b gis' r
-      r d16 c \appoggiatura b8 a4 r2 \bar "|."
-    }
-    \addlyrics {
-      Now from the sixth
-      hour there was dark -- ness
-      o -- ver all the land, un --
-      til the ninth hour.
-      And a -- bout the ninth
-      hour Je -- sus cried a -- loud, and
-      said:
-      That is:
-      My God, My
-      God, Ah, why why has Thou for --
-      sak -- en Me? Some of
-      them who stood and watched Him, when they had
-      heard Him, turned and said:
-      And straight -- way one of them did run,
-      and took a sponge; and
-      fill -- ing the sponge with vin -- e -- gar, he
-      put it up -- on a reed, and
-      gave Him to drink. The
-      oth -- ers spoke a -- mong them:
-      And a -- gain did Je -- sus cry a -- loud,
-      and was gone.
-    }
-    \midi {}
-    \layout {
-      \context { \Staff \consists "Ambitus_engraver" }
-    }
-  }
-
-  \score {
     \header {
       title = ##f
       composer = ##f
