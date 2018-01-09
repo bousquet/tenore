@@ -54,7 +54,7 @@ upperSixtyTwo = \relative c' {
   << g d bes >> r r2
   r1
   \key f \major
-  << f'4 d bes >> r r2
+  << f'4 d a >> r r2
   r4 << g' e a, >> r2
   << fis'4 d a >> r r2
   << d4 g, >> r r << g' cis, a >>

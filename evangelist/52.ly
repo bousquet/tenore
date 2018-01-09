@@ -11,7 +11,7 @@ vocalFiftyTwo = \relative c' {
   r2 r8 g,16 g c8 c16 d
   e4 r8 c16 d e8 f g g16 e
   cis4 cis r8 d g,8. f16
-  d8 d r4 r r8 a'
+  \parenthesize e8 d r4 r r8 a'
   d e f d16 b e4 r \bar "||"
   r2. r8 gis,16 a
   \key c \major
