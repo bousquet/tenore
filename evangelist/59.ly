@@ -113,3 +113,21 @@ midiFiftyNine = \score {
   >>
   \midi {}
 }
+
+fullFiftyNine = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "59"
+  }
+  <<
+    \new Voice = "mel" { \vocalFiftyNine }
+    \new Lyrics \lyricsto mel \lyricFiftyNine
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperFiftyNine }
+      \new Staff = "lower" { \lowerFiftyNine }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

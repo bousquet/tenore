@@ -69,3 +69,21 @@ midiFortyThree = \score {
   >>
   \midi {}
 }
+
+fullFortyThree = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "43"
+  }
+  <<
+    \new Voice = "mel" { \vocalFortyThree }
+    \new Lyrics \lyricsto mel \lyricFortyThree
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperFortyThree }
+      \new Staff = "lower" { \lowerFortyThree }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

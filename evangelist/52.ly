@@ -108,3 +108,21 @@ midiFiftyTwo = \score {
   >>
   \midi {}
 }
+
+fullFiftyTwo = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "52"
+  }
+  <<
+    \new Voice = "mel" { \vocalFiftyTwo }
+    \new Lyrics \lyricsto mel \lyricFiftyTwo
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperFiftyTwo }
+      \new Staff = "lower" { \lowerFiftyTwo }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

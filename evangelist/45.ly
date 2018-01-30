@@ -110,3 +110,22 @@ midiFortyFive = \score {
   >>
   \midi {}
 }
+
+
+fullFortyFive = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "45"
+  }
+  <<
+    \new Voice = "mel" { \vocalFortyFive }
+    \new Lyrics \lyricsto mel \lyricFortyFive
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperFortyFive }
+      \new Staff = "lower" { \lowerFortyFive }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

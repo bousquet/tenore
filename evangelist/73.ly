@@ -166,3 +166,21 @@ midiSeventyThree = \score {
   >>
   \midi {}
 }
+
+fullSeventyThree = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "73"
+  }
+  <<
+    \new Voice = "mel" { \vocalSeventyThree }
+    \new Lyrics \lyricsto mel \lyricSeventyThree
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperSeventyThree }
+      \new Staff = "lower" { \lowerSeventyThree }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

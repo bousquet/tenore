@@ -159,3 +159,21 @@ midiFiftyFour = \score {
   >>
   \midi {}
 }
+
+fullFiftyFour = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "54"
+  }
+  <<
+    \new Voice = "mel" { \vocalFiftyFour }
+    \new Lyrics \lyricsto mel \lyricFiftyFour
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperFiftyFour }
+      \new Staff = "lower" { \lowerFiftyFour }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

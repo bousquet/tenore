@@ -50,3 +50,21 @@ midiFiftySix = \score {
   >>
   \midi {}
 }
+
+fullFiftySix = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "56"
+  }
+  <<
+    \new Voice = "mel" { \vocalFiftySix }
+    \new Lyrics \lyricsto mel \lyricFiftySix
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperFiftySix }
+      \new Staff = "lower" { \lowerFiftySix }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

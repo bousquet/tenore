@@ -140,3 +140,21 @@ midiSeventyOne = \score {
   >>
   \midi {}
 }
+
+fullSeventyOne = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "71"
+  }
+  <<
+    \new Voice = "mel" { \vocalSeventyOne }
+    \new Lyrics \lyricsto mel \lyricSeventyOne
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperSeventyOne }
+      \new Staff = "lower" { \lowerSeventyOne }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

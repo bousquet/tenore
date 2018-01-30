@@ -105,3 +105,21 @@ midiFortyNine = \score {
   >>
   \midi {}
 }
+
+fullFortyNine = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "49"
+  }
+  <<
+    \new Voice = "mel" { \vocalFortyNine }
+    \new Lyrics \lyricsto mel \lyricFortyNine
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperFortyNine }
+      \new Staff = "lower" { \lowerFortyNine }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

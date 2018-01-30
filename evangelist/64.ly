@@ -72,3 +72,21 @@ midiSixtyFour = \score {
   >>
   \midi {}
 }
+
+fullSixtyFour = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "64"
+  }
+  <<
+    \new Voice = "mel" { \vocalSixtyFour }
+    \new Lyrics \lyricsto mel \lyricSixtyFour
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperSixtyFour }
+      \new Staff = "lower" { \lowerSixtyFour }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

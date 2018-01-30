@@ -88,3 +88,21 @@ midiThirtyNine = \score {
   >>
   \midi {}
 }
+
+fullThirtyNine = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "39"
+  }
+  <<
+    \new Voice = "mel" { \vocalThirtyNine }
+    \new Lyrics \lyricsto mel \lyricThirtyNine
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperThirtyNine }
+      \new Staff = "lower" { \lowerThirtyNine }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

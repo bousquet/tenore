@@ -111,3 +111,21 @@ midiThirtySeven = \score {
   >>
   \midi {}
 }
+
+fullThirtySeven = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "37"
+  }
+  <<
+    \new Voice = "mel" { \vocalThirtySeven }
+    \new Lyrics \lyricsto mel \lyricThirtySeven
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperThirtySeven }
+      \new Staff = "lower" { \lowerThirtySeven }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

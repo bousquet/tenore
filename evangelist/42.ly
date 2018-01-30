@@ -83,3 +83,22 @@ midiFortyTwo = \score {
   >>
   \midi {}
 }
+
+
+fullFortyTwo = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "42"
+  }
+  <<
+    \new Voice = "mel" { \vocalFortyTwo }
+    \new Lyrics \lyricsto mel \lyricFortyTwo
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperFortyTwo }
+      \new Staff = "lower" { \lowerFortyTwo }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

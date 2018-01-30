@@ -94,3 +94,21 @@ midiThirtyFour = \score {
   >>
   \midi {}
 }
+
+fullThirtyFour = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "34"
+  }
+  <<
+    \new Voice = "mel" { \vocalThirtyFour }
+    \new Lyrics \lyricsto mel \lyricThirtyFour
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperThirtyFour }
+      \new Staff = "lower" { \lowerThirtyFour }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

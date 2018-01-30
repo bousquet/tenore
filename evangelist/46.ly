@@ -96,3 +96,21 @@ midiFortySix = \score {
   >>
   \midi {}
 }
+
+fullFortySix = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "46"
+  }
+  <<
+    \new Voice = "mel" { \vocalFortySix }
+    \new Lyrics \lyricsto mel \lyricFortySix
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperFortySix }
+      \new Staff = "lower" { \lowerFortySix }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}

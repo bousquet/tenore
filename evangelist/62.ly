@@ -109,3 +109,21 @@ midiSixtyTwo = \score {
   >>
   \midi {}
 }
+
+fullSixtyTwo = \score {
+  \header {
+    title = ##f
+    composer = ##f
+    subtitle = "62"
+  }
+  <<
+    \new Voice = "mel" { \vocalSixtyTwo }
+    \new Lyrics \lyricsto mel \lyricSixtyTwo
+    \new PianoStaff <<
+      \new Staff = "upper" { \upperSixtyTwo }
+      \new Staff = "lower" { \lowerSixtyTwo }
+    >>
+  >>
+  \midi {}
+  \layout {}
+}
