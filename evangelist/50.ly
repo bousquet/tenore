@@ -10,7 +10,7 @@ vocalFifty = \relative c' {
   g8([ e] ais,) g' \parenthesize fis8([ e]) r4
   r b8 b16 c d8 d g d
   b a16 g f'8 e e e r c
-  c([ g]) r2. \bar "||"
+  c([ g]) r2. \bar "|."
 }
 
 lyricFifty = \lyricmode {

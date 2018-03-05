@@ -5,7 +5,7 @@ vocalThirtyNine = \relative c' {
 
   r4 r8 a16 bes c8 c16 d ees8 c
   a a d a bes4 a16 bes c bes
-  g8 r r d' g r cis,8. d16
+  \parenthesize a8([ g]) r d' g r cis,8. d16
   e8 a, g' f f f r d
   d a r4 r2 \bar "||"
   r2 r4 r8 f bes c d c16 bes g'8 g, a bes

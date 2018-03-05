@@ -5,7 +5,7 @@ vocalThirtyFour = \relative c' {
   \accidentalStyle modern-cautionary
 
   r4 r8 cis fis fis r4
-  ais,16 ais ais b cis8 fis, r cis'16 d e8 d
+  ais,16 ais ais b cis8 fis, r cis'16 d e8 \parenthesize cis
   d d r16 b cis d e8 g r e
   cis a a' e g16 fis8 d16 gis8 eis16 fis
   cis4 r r a8 b

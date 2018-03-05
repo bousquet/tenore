@@ -6,7 +6,7 @@ vocalFiftyTwo = \relative c' {
 
   r2 \key c \major g'8 ees c d
   ees ees d c f16 f f8 r f,16 g
-  a8 a16 bes c8 f16 c \key f \major d4 r4 \bar "||"
+  a8 a16 bes c8 f16 c \key f \major \parenthesize ees8([ d]) r4 \bar "||"
   r2. g8 d
   b d d g, ees'4 r \bar "||"
   r2 r8 g,16 g c8 c16 d

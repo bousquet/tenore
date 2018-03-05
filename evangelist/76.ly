@@ -6,7 +6,7 @@ vocalSeventySix = \relative c' {
 
   r4 r8 d g d bes d
   fis,16 fis r16 fis c' c c d ees8 c a d
-  bes8 bes r bes bes f f g
+  \parenthesize c8 bes r bes bes f f g
   aes f d4 g8 g16 a b8 c
   d d16 ees f8 g aes r r f
   b, b16 c d f, f g aes8 aes16 f d8 f16 f
@@ -23,7 +23,7 @@ vocalSeventySix = \relative c' {
   bes4 r4 r2 \bar "||"
   r2 r8 g d' ees
   f4 r8 f,16 g aes8 aes16 f d8 bes'
-  g g r bes16 ees, c'4 d8 ees
+  \parenthesize aes g r bes16 ees, c'4 d8 ees
   ees([ bes]) r4 r2 \bar "|."
 }
 

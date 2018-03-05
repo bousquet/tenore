@@ -42,8 +42,8 @@ lyricSeventyThree = \lyricmode {
   sun -- der,  and the
   graves were o -- pened a -- gain, and
   there rose ma -- ny saints and the
-  ho -- ly ones that were sleep --
-  ing; and came from
+  ho -- ly ones that were slee --
+  ping; and came from
   out the graves af -- ter Je -- sus' re -- sur --
   rec -- tion, and went in -- to the Ho -- ly
   Ci -- ty, and ap -- peared to ma -- ny.

@@ -19,7 +19,7 @@ vocalThirtySeven = \relative c' {
   a a16 bes c8 a f a16 c ees8 d
   d a c bes bes bes r d
   ees c16 a fis8. a16 bes8 r16 d g8 f
-  \parenthesize e8([  d8]) r r2
+  \parenthesize e8([  d8]) r4 r2
   \bar "|."
 }
 

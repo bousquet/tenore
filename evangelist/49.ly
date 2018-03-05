@@ -14,7 +14,7 @@ vocalFortyNine = \relative c' {
   cis dis e e r a, a16 e e fis
   g8 g r cis, ais' ais16 b cis8 d
   e[( g,)] r ais16 ais g'8 g g fis
-  d r16 fis, b8 b16 ais b8 cis d b
+  \parenthesize e16([ d]) r fis, b8 b16 ais b8 cis d b
   e8. b16 gis8 gis16 a b8 e fis fis16 e
   \parenthesize d8 cis4 a8 e'4 r \bar "||"
   r1 \bar "||"
