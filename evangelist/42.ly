@@ -2,6 +2,7 @@ vocalFortyTwo = \relative c' {
   \clef "G_8"
   \key g \major
   \autoBeamOff
+  \accidentalStyle modern-cautionary
 
   r8. b16 e8 fis g g c, c16 d
   e8 c a d b4 r \bar "||"
@@ -30,6 +31,7 @@ lyricFortyTwo = \lyricmode {
 upperFortyTwo = \relative c' {
   \clef treble
   \key g \major
+  \accidentalStyle Score.piano-cautionary
 
   << b'4 g e >> r r2
   r4 << d' a d, >> << b' g d >> r

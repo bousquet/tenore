@@ -2,6 +2,7 @@ vocalSeventySix = \relative c' {
   \clef "G_8"
   \key bes \major
   \autoBeamOff
+  \accidentalStyle modern-cautionary
 
   r4 r8 d g d bes d
   fis,16 fis r16 fis c' c c d ees8 c a d
@@ -52,6 +53,7 @@ lyricSeventySix = \lyricmode {
 upperSeventySix = \relative c' {
   \clef treble
   \key bes \major
+  \accidentalStyle Score.piano-cautionary
 
   <d bes g>4 r r2
   r1

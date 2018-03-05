@@ -2,6 +2,7 @@ vocalFortySix = \relative c' {
   \clef "G_8"
   \key d \major
   \autoBeamOff
+  \accidentalStyle modern-cautionary
 
   \partial 4 r4
   r8 gis cis dis eis eis eis fis
@@ -35,6 +36,7 @@ lyricFortySix = \lyricmode {
 upperFortySix = \relative c' {
   \clef treble
   \key d \major
+  \accidentalStyle Score.piano-cautionary
 
   \partial 4 << cis'4 gis cis, >>
   r1

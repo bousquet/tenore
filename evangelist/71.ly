@@ -2,6 +2,7 @@ vocalSeventyOne = \relative c' {
   \clef "G_8"
   \key ees \major
   \autoBeamOff
+  \accidentalStyle modern-cautionary
 
   r4 r8 ees, g aes bes([ c])
   des([ bes]) r des16 ees fes8. fes16~ fes4
@@ -56,6 +57,7 @@ lyricSeventyOne = \lyricmode {
 upperSeventyOne = \relative c' {
   \clef treble
   \key ees \major
+  \accidentalStyle Score.piano-cautionary
 
   << ees4 bes >> r r2
   r1

@@ -2,6 +2,7 @@ vocalFiftyTwo = \relative c' {
   \clef "G_8"
   \key g \major
   \autoBeamOff
+  \accidentalStyle modern-cautionary
 
   r2 \key c \major g'8 ees c d
   ees ees d c f16 f f8 r f,16 g
@@ -41,6 +42,7 @@ lyricFiftyTwo = \lyricmode {
 upperFiftyTwo = \relative c' {
   \clef treble
   \key g \major
+  \accidentalStyle Score.piano-cautionary
 
   r4 << g' d b >> \key c \major << g' ees c >> r
   r2 << f4 c >> r
