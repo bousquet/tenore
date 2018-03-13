@@ -30,6 +30,8 @@
   print-all-headers = ##t
 }
 
+#(set-global-staff-size 16)
+
 \book {
   \scoreThirtyFour
   \midiThirtyFour
