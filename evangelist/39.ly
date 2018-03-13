@@ -2,6 +2,7 @@ vocalThirtyNine = \relative c' {
   \clef "G_8"
   \key f \major
   \autoBeamOff
+  \accidentalStyle modern-cautionary
 
   r4 r8 a16 bes c8 c16 d ees8 c
   a a d a bes4 a16 bes c bes
@@ -31,6 +32,7 @@ lyricThirtyNine = \lyricmode {
 upperThirtyNine = \relative c' {
   \clef treble
   \key f \major
+  \accidentalStyle Score.piano-cautionary
 
   << a'4 d, a >> r4 r2
   r << g'4 d bes >> << g' ees a, >>
