@@ -20,7 +20,7 @@ vocalFiftyNine = \relative c' {
   fis fis a fis16 d g4 r8 b,16([ c])
   d8 d f e e4 r8 b
   c c16 d e8 a, a' r16 fis dis8 fis
-  g([ fis16]) e e8 b r2 \bar "||"
+  g([ fis16]) e e8 b r2 \bar "|."
 }
 
 lyricFiftyNine = \lyricmode {

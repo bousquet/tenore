@@ -32,7 +32,7 @@ vocalFiftyFour = \relative c' {
   r4 r8 b fis' fis dis b16 b
   g'4 r4 r2 \bar "||"
   r2 r8 b, e b
-  c c r4 r2 \bar "||"
+  c c r4 r2 \bar "|."
 }
 
 lyricFiftyFour = \lyricmode {
@@ -129,7 +129,7 @@ lowerFiftyFour = \relative c {
   r2 b4 r
   r2 fis4 r
   r a << dis8. dis, >> << dis'16 dis, >> << dis'4 dis, >>
-  d'4 r r2
+  dis'4 r r2
   e4 r r2
   gis,4 r r2
   a4 r r2
