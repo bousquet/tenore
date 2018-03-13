@@ -20,8 +20,10 @@
 \include "76.ly"
 
 \header {
-  title = "St Matthew's Passion"
+  title = "St Matthew Passion"
+  subtitle = "Evangelist"
   composer = "J.S. Bach"
+  poet = "Robert Shaw"
   tagline = \markup { \smallCaps "~ Robert Bousquet ~" }
 }
 

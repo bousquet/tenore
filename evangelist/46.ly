@@ -76,6 +76,7 @@ scoreFortySix = \score {
   \header {
     title = ##f
     composer = ##f
+    poet = ##f
     subtitle = "46"
   }
   <<
@@ -103,6 +104,7 @@ fullFortySix = \score {
   \header {
     title = ##f
     composer = ##f
+    poet = ##f
     subtitle = "46"
   }
   <<

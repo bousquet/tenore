@@ -55,6 +55,7 @@ scoreFifty = \score {
   \header {
     title = ##f
     composer = ##f
+    poet = ##f
     subtitle = "50"
   }
   <<
@@ -82,6 +83,7 @@ fullFifty = \score {
   \header {
     title = ##f
     composer = ##f
+    poet = ##f
     subtitle = "50"
   }
   <<

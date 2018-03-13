@@ -91,6 +91,7 @@ scoreThirtySeven = \score {
   \header {
     title = ##f
     composer = ##f
+    poet = ##f
     subtitle = "37"
   }
   <<
@@ -118,6 +119,7 @@ fullThirtySeven = \score {
   \header {
     title = ##f
     composer = ##f
+    poet = ##f
     subtitle = "37"
   }
   <<
