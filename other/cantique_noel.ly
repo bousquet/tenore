@@ -227,11 +227,11 @@ VerseSix= \lyricmode {
   <<
     \new Voice = "mel" { \melody }
     \new Lyrics \lyricsto mel \VerseOne
-    \new Lyrics \lyricsto mel \VerseTwo
-    \new Lyrics \lyricsto mel \VerseThree
+    %{ \new Lyrics \lyricsto mel \VerseTwo %}
+    %{ \new Lyrics \lyricsto mel \VerseThree %}
     \new Lyrics \lyricsto mel \VerseFour
-    \new Lyrics \lyricsto mel \VerseFive
-    \new Lyrics \lyricsto mel \VerseSix
+    %{ \new Lyrics \lyricsto mel \VerseFive %}
+    %{ \new Lyrics \lyricsto mel \VerseSix %}
   >>
   \layout {
     indent = 0
