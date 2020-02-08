@@ -33,7 +33,7 @@ vocalOne = \relative c' {
   des c) bes aes
   ges( f e f
   ges des ees e)
-  f2 r2 \bar "||"
+  f2 r2 \bar "|."
 }
 
 lyricOne = \lyricmode {
@@ -65,7 +65,7 @@ scoreOne = \score {
     title = ##f
     composer = ##f
     poet = ##f
-    subtitle = "1. Te Deum"
+    subtitle = "1. Te Deum laudamus"
   }
   <<
     \new Voice = "mel" \with {

@@ -40,7 +40,7 @@ vocalTwo = \relative c {
   bes4 bes bes bes
   a1(
   g)
-  a2 r \bar "||"
+  a2 r \bar "|."
 }
 
 lyricTwo = \lyricmode {
@@ -85,7 +85,7 @@ scoreTwo = \score {
     title = ##f
     composer = ##f
     poet = ##f
-    subtitle = "2. Te Ergo"
+    subtitle = "2. Te ergo quaesumus"
   }
   <<
     \new Voice = "mel" \with {

@@ -2,6 +2,8 @@
 
 \include "./1.ly"
 \include "./2.ly"
+\include "./4.ly"
+\include "./5.ly"
 
 \header {
   title = "Te Deum"
@@ -14,11 +16,15 @@
   print-all-headers = ##t
 }
 
-#(set-global-staff-size 16)
+#(set-global-staff-size 15)
 
 \book {
   \scoreOne
   \scoreTwo
+  \scoreFour
+  \scoreFive
   \midiOne
   \midiTwo
+  \midiFour
+  \midiFive
 }
