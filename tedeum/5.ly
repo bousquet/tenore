@@ -2,44 +2,50 @@ vocalFive = \relative c' {
   \clef "G_8"
   \key c \major
   \autoBeamOff
-  \accidentalStyle modern-cautionary
   \compressFullBarRests
+  \accidentalStyle modern-cautionary
+  \override DynamicTextSpanner.style = #'none
+  \set Score.markFormatter = #format-mark-box-letters
+  \set Score.tempoHideNote = ##t
   \tempo 4 = 100
 
-  r2 r4 g
-  c-> r g8.-> g16 g8 f'
+  \mark #20
+  r2 ^\markup { \italic "Moderately lively" } r4 g -\tweak X-offset #-5 \mf
+  c-> r g8.-> ^\crescpoco g16 g8 f'
   f4 e a, a
   a4. a8 f'4 dis
-  e d r g,
-  c-> r g8.-> g16 g8 f'
+  e d r g, ^\mf
+  c-> ^\crescpoco r g8.-> g16 g8 f'
   f4 e c8([ bes]) a([ g])
   a4. a8 f'4 cis8([ c])
-  b4 b r b
+  b4 b r b ^\f
   e-> r dis8.-> dis16 d8 d
-  d4 c c b
-  bes4. bes8 b4 bes
-  bes( aes) f( g)
-  r4 ees2 bes'4
+  d4 c c ^\dim b
+  bes4. ^\pp bes8 ^\< b4 bes
+  bes( \! aes) f( ^\> g)
+  r4 \! ees2 ^\pp bes'4
   a2 a4 r
-  r ees2 bes'4
-  a a r2
-  r b4 d
+  r ees2 ^\< bes'4
+  a \! a r2
+  r b4 ^\mf d ^\crescpoco
   d e8([ fis]) g4 fis8([ e])
   d2.( fis8 a)
   d,4 r r2
-  r ees4. ees,8
+  r ees4. ^\f ees,8
   c'4 ees aes g8([ f])
   ees1
-  ees4 r r2 \bar "||"
-  r1 \bar "||"
-  ees,2 g
+  ees4 r r2
+  R1*5 \mark #21 \bar "||"
+  \stopStaff s1 \startStaff \mark #23 \bar "||"
+  R1*8
+  ees,2 -\tweak X-offset #-6 \mf ^\markup { \halign #-0.8 \small \italic "Tempo as at the beginning" } g
   aes2. ees8([ g])
-  aes2 bes
-  bes a
+  aes2 ^\cresc bes
+  bes ^\f ^\crescsempre a
   bes a
   bes2. f8([ a])
   des2 des
-  des c \bar "||"
+  des c ^\ff \mark #24 \bar "||"
 }
 
 lyricFive = \lyricmode {
@@ -79,19 +85,16 @@ lyricFive = \lyricmode {
 }
 
 scoreFive = \score {
-  \header {
-    title = ##f
-    composer = ##f
-    poet = ##f
-    subtitle = "5. In te Domine speravi"
-  }
+  \header { piece =  \markup { \fontsize #2 \bold "5. In te Domine speravi" }}
   <<
     \new Voice = "mel" \with {
       \consists "Ambitus_engraver"
     } { \vocalFive }
     \new Lyrics \lyricsto mel \lyricFive
   >>
-  \layout {}
+  \layout {
+    indent = #0
+  }
 }
 
 midiFive = \score {
