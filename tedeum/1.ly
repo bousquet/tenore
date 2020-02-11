@@ -12,7 +12,7 @@ vocalOne = \relative c' {
 
   s1 \mark #1 \bar "||"
   R1*2
-  d2-\tweak X-offset #-5 \mf ^\markup { \italic "expressively" } d
+  d2-\tweak X-offset #-6 \mf ^\markup { \halign #-0.6 \italic "expressively" } d
   f4.( e8 f4) d
   a8. a16 a4 r2
   r1

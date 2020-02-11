@@ -10,7 +10,7 @@ vocalFive = \relative c' {
   \tempo 4 = 100
 
   \mark #20
-  r2 ^\markup { \italic "Moderately lively" } r4 g -\tweak X-offset #-5 \mf
+  r2 ^\markup { \halign #-0.7 \italic "Moderately lively" } r4 g -\tweak X-offset #-5 \mf
   c-> r g8.-> ^\crescpoco g16 g8 f'
   f4 e a, a
   a4. a8 f'4 dis
@@ -38,7 +38,10 @@ vocalFive = \relative c' {
   R1*5 \mark #21 \bar "||"
   \stopStaff s1 \startStaff \mark #23 \bar "||"
   R1*8
-  ees,2 -\tweak X-offset #-6 \mf ^\markup { \halign #-0.8 \small \italic "Tempo as at the beginning" } g
+  ees,2 -\tweak X-offset #-6 \mf
+    ^\markup { \bold "Allegro" }
+    ^\markup { \halign #-0.7 \small \italic "(Tempo as at the beginning)" }
+    g
   aes2. ees8([ g])
   aes2 ^\cresc bes
   bes ^\f ^\crescsempre a
