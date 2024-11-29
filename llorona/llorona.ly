@@ -7,7 +7,8 @@ global = {
 
 Violinone = \new Voice {
   \relative c'' {
-    b4\p g r16 g( a b)
+    \tempo 4 = 88
+    b4(\p^"Quasi cadenza" g) r16 g( a b)
     d4( c) r8. fis,16
     c'8( b4) b16 b a8.( g16)
     a8( fis4.) r4
@@ -38,6 +39,25 @@ Violinone = \new Voice {
     e e8 e e4~
     e4. c4( b8)
     d4( c8) c4.
+    r4 g8 b4.
+    g8 g g b4( g8)
+    a fis4~ fis4.
+    r b8 b b
+    e4.~ e8 e4
+    g4. g4 g8
+    a4. fis4 fis8
+    a4. fis
+    r4 c8 c4 c8
+    c fis4~ fis e8
+    dis4. b~
+    b2.
+    b'
+    g8 b4~ b8 b d~
+    d4 c8~ c b d~
+    d4 c8~ c4.
+    r8 b( c) b4 b16 b
+    a4.~ a4 g8
+    a4 fis8~ fis4.
   }
 }
 
@@ -64,6 +84,25 @@ Violintwo = \new Voice {
     b-- b-- b--
     c-- c-- c--
     <g e'>4.-> r
+    <g e'>-> r
+    \appoggiatura { g16 a } b2.
+    a4. g
+    fis2.
+    g16( a b4~ b4.
+    b2.)
+    b16( c d4~ d4.~
+    d~ d4) d16( e)
+    fis16( g a4~ a4.~
+    a) g
+    fis:32 b:32
+    dis:32 fis8.:32 b:32
+    e,8-> r r r4.
+    <b, g'>8-> r r r4.
+    <a g'>8-> r r r4.
+    <a e'>8-> r4 fis8 dis8. a'16
+    b4.~ b4 c16( b)
+    b( a g4~ g) fis16( e)
+    fis4 dis8~ dis4.
   }
 }
 
@@ -91,6 +130,25 @@ Viola = \new Voice {
     g8-> g g g g-> g->
     g8-> g g g g-> g->
     g8-> g g g b'8.-> a16->
+    b8-> g g g g-> g->
+    g-> g g g g-> g->
+    dis-> dis dis dis dis-> dis->
+    dis-> dis dis dis dis-> dis->
+    g-> g g g g-> g->
+    g-> g g g g-> g->
+    g-> g fis fis fis-> fis->
+    fis-> fis d d d-> d->
+    e-> fis g a g-> fis->
+    e-> fis g a g-> fis->
+    fis8 b16( c b a) b8 b16( c b a)
+    b16-. a-. g-. fis-. e-. dis-. b-. a-. g-. fis-. e-. dis-.
+    e4-> b'-- b--
+    e-> b-- b--
+    d-> a-- a--
+    d-> a-- a--
+    b-- c-- b--
+    b-- c-- b--
+    b-- dis-- b--
   }
 }
 
@@ -118,6 +176,25 @@ Cello = \new Voice {
     e4.-> e8-. e-. e-.
     c4.-> c8-. c-. c-.
     a4.-> a8-. a-. a-.
+    b4._\markup { \italic sim. } b8 b b
+    b4. b8 b b
+    b4. fis8 fis fis
+    b4. fis8 fis fis
+    e'4. e8 e e
+    e4. e8 e e
+    d4. d8 d d
+    d4. d8 d d
+    c4. c8 c c
+    c4. c8 c c
+    b4. b8 b b
+    b4. b8 b b
+    e,4. e8 e e
+    e4. e8 e e
+    a4. a8 a a
+    a4. a8 a a
+    g4. g8 g g
+    g4. g8 g g
+    dis'4-- fis-- dis--
   }
 }
 
