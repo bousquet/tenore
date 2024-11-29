@@ -99,7 +99,7 @@ Violinone = \new Voice {
     a4 b a
     gis4. gis~
     gis r
-    r cis8 cis cis
+    r cis,8 cis cis
     fis4.~ fis8 cis d
     cis4. cis~
     cis2.~
@@ -150,7 +150,7 @@ Violintwo = \new Voice {
     fis16( g a4~ a4.~
     a) g
     fis:32 b:32
-    dis:32 fis8.:32 b:32
+    dis,:32 fis8.:32 b:32
     e,8-> r r r4.
     <b, g'>8-> r r r4.
     <a g'>8-> r r r4.
