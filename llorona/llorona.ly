@@ -116,6 +116,7 @@ Violintwo = \new Voice {
     R
     R
     R
+    \bar "||"
     \time 6/8
     g2.
     fis
@@ -124,6 +125,7 @@ Violintwo = \new Voice {
     e4.:32 c':32
     b4.:32~\< b8:32 dis16( cisis dis8)
     fis16( e fis8) b16( a b8) <fis dis'>-> <fis dis'>->
+    \bar "||"
     b,4\f-- b-- b--
     b-- b-- b--
     c-- c-- c--
@@ -164,6 +166,7 @@ Violintwo = \new Voice {
     g4.~ g8 a g
     a4. a~
     a r
+    \bar "||"
     \key a \major
     cis4.~ cis8 cis cis
     fis4. fis8 fis4
@@ -187,6 +190,7 @@ Violintwo = \new Voice {
     <b gis'>8-> <b gis'>-- r r4.
     <a fis'>4.-> <a fis'>8-> <a fis'>-> <a fis'>->
     R2.
+    \bar "|."
   }
 }
 
@@ -203,6 +207,7 @@ Viola = \new Voice {
     <a c>4^"pizz."\p r r
     R2.
     <dis b'>4 r r
+    \bar "||"
     \time 6/8
     r4. g8 e b
     r4. <fis d'>4 <fis d'>8
@@ -252,6 +257,7 @@ Viola = \new Voice {
     fis8-> fis fis e e-> e->
     dis8-> dis dis b b-> b->
     dis8-> dis dis fis fis-> fis->
+    \bar "||"
     \key a \major
     fis8-> fis fis cis cis-> cis->
     fis8-> fis fis fis fis-> fis->
@@ -275,6 +281,7 @@ Viola = \new Voice {
     <a fis'>8-> <a fis'>-- r r4.
     <a cis,>4.-> <a cis,>8-> <a cis,>8-> <a cis,>8->
     R2.
+    \bar "|."
   }
 }
 
@@ -291,6 +298,7 @@ Cello = \new Voice {
     <a,, fis' e'>\arpeggio r r
     e'8 g b4 r
     <b, fis' b>4\arpeggio r r
+    \bar "||"
     \time 6/8
     e8 g b e r r
     d, fis a d a d
@@ -339,6 +347,7 @@ Cello = \new Voice {
     c4. c8 c c
     b4. b8 b b
     b4. b8 b b
+    \bar "||"
     \key a \major
     fis4. fis8 fis fis
     fis'4. fis8 fis fis
@@ -362,86 +371,29 @@ Cello = \new Voice {
     cis'8-> cis-- r r4.
     fis,4.-> fis8-> fis-> fis->
     fis-> r r r4.
+    \bar "|."
   }
 }
 
 
 music = {
-  <<
-    \tag #'score \tag #'vn1
-    \new Staff \with { instrumentName = "Violin 1" }
-    << \global \Violinone >>
+  \transpose g bes {
+    <<
+      \tag #'score \tag #'vn1
+      \new Staff \with { instrumentName = "Violin 1" midiInstrument = "violin" }
+      << \global \Violinone >>
 
-    \tag #'score \tag #'vn2
-    \new Staff \with { instrumentName = "Violin 2" }
-    << \global \Violintwo>>
+      \tag #'score \tag #'vn2
+      \new Staff \with { instrumentName = "Violin 2" midiInstrument = "violin" }
+      << \global \Violintwo>>
 
-    \tag #'score \tag #'vla
-    \new Staff \with { instrumentName = "Viola" }
-    << \global \Viola>>
+      \tag #'score \tag #'vla
+      \new Staff \with { instrumentName = "Viola" midiInstrument = "viola" }
+      << \global \Viola>>
 
-    \tag #'score \tag #'vlc
-    \new Staff \with { instrumentName = "Cello" }
-    << \global \Cello >>
-  >>
+      \tag #'score \tag #'vlc
+      \new Staff \with { instrumentName = "Cello" midiInstrument = "cello" }
+      << \global \Cello >>
+    >>
+  }
 }
-
-% These are the other files you need to save on your computer
-
-% score.ly
-% (This is the main file)
-
-% uncomment the line below when using a separate file
-%\include "piece.ly"
-
-#(set-global-staff-size 14)
-
-\score {
-  \new StaffGroup \keepWithTag #'score \music
-  \layout { }
-  \midi { }
-}
-
-
-%{ Uncomment this block when using separate files
-
-% vn1.ly
-% (This is the Violin 1 part file)
-
-\include "piece.ly"
-\score {
-  \keepWithTag #'vn1 \music
-  \layout { }
-}
-
-
-% vn2.ly
-% (This is the Violin 2 part file)
-
-\include "piece.ly"
-\score {
-  \keepWithTag #'vn2 \music
-  \layout { }
-}
-
-
-% vla.ly
-% (This is the Viola part file)
-
-\include "piece.ly"
-\score {
-  \keepWithTag #'vla \music
-  \layout { }
-}
-
-
-% vlc.ly
-% (This is the Cello part file)
-
-\include "piece.ly"
-\score {
-  \keepWithTag #'vlc \music
-  \layout { }
-}
-
-%}
