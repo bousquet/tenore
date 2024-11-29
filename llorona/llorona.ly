@@ -106,8 +106,8 @@ Violinone = \new Voice {
     cis4 r8 cis8->\ff cis-> cis->
     fis2.~
     fis~
-    fis
-    R2.
+    fis~
+    fis8 r r r4.
     \bar "|."
   }
 }
@@ -197,7 +197,7 @@ Violintwo = \new Voice {
     <cis, a'>-> <cis a'>-- r r4.
     <b gis'>8-> <b gis'>-- r r4.
     <a fis'>4.-> <a fis'>8-> <a fis'>-> <a fis'>->
-    R2.
+    <a fis'>-> r r r4.
     \bar "|."
   }
 }
@@ -288,7 +288,7 @@ Viola = \new Voice {
     <a, fis'>8->\ff <a fis'>-- r r4.
     <a fis'>8-> <a fis'>-- r r4.
     <a cis,>4.-> <a cis,>8-> <a cis,>8-> <a cis,>8->
-    R2.
+    <a cis,>8-> r r r4.
     \bar "|."
   }
 }
