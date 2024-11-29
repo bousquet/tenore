@@ -42,8 +42,9 @@ Violinone = \new Voice {
         " = "
         \smaller \general-align #Y #DOWN \note {4} #1
         )
-      } 4 = 180
+      }
     }
+    \tempo 4. = 120
     e4\f e8 e e4
     e e8 e e4~
     e4. c4( b8)
