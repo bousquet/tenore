@@ -1,5 +1,13 @@
 \version "2.24.4"
 
+\header {
+  title     = \markup { "La Llorona"}
+  subtitle  = \markup { "The Weeping Woman"}
+  composer  = \markup { \smallCaps "Traditional/Coco" }
+  arranger  = \markup { \smallCaps "Arr. Alice Hong"}
+  tagline   = \markup { \smallCaps "~ Emily Bousquet ~"}
+}
+
 global = {
   \time 3/4
   \key g \major
