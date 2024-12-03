@@ -4,17 +4,14 @@
   title     = \markup { "La Llorona"}
   subtitle  = \markup { "The Weeping Woman"}
   composer  = \markup { \smallCaps "Traditional/Coco" }
-  arranger  = \markup { \smallCaps "Arr. Alice Hong"}
-  tagline   = \markup { \smallCaps "~ Emily Bousquet ~"}
-}
-
-global = {
-  \time 3/4
-  \key g \major
+  arranger  = \markup { \smallCaps "Arr. Alice Hong" }
+  tagline   = \markup { \smallCaps "~ Emily Bousquet ~" }
 }
 
 Violinone = \new Voice {
   \relative c'' {
+    \time 3/4
+    \key g \major
     \tempo 4 = 88
     \partial 8 a8(
     b4\p^"Quasi cadenza" g) r16 g( a b)
@@ -125,6 +122,9 @@ Violintwo = \new Voice {
     R
     R
     R
+    \time 3/4
+    \key g \major
+    \tempo 4 = 88
     \bar "||"
     \time 6/8
     g2.
@@ -213,6 +213,9 @@ Viola = \new Voice {
     R
     R
     R
+    \time 3/4
+    \key g \major
+    \tempo 4 = 88
     <a c>4^"pizz."\p r r
     R2.
     <dis b'>4 r r
@@ -300,6 +303,9 @@ Cello = \new Voice {
     \clef bass
     \partial 8 r8
     R2.
+    \time 3/4
+    \key g \major
+    \tempo 4 = 88
     R
     R
     R
