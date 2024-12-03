@@ -13,26 +13,29 @@ Violinone = \new Voice {
     \time 3/4
     \key g \major
     \tempo 4 = 88
-    \partial 8 a8(
-    b4\p^"Quasi cadenza" g) r16 g( a b)
-    d4( c) r8. fis,16
-    c'8( b4) b16 b a8.( g16)
-    a8( fis4.) r4
-    b8. b16 e4. b16( d)
-    b8( c4.) r8. e16
-    g8( b,4) b16 b a8.( g16)
-    a8( fis4.) r4
+
+    \magnifyMusic 0.7 {
+      \acciaccatura { a8 } b4(\p^"Quasi cadenza" g) r16 g( a b)
+      d4( c) r8. fis,16
+      c'8( b4) b16 b a8.( g16)
+      a8( fis4.) r4
+      b8. b16 e4. b16( d)
+      b8( c4.) r8. e16
+      g8( b,4) b16 b a8.( g16)
+      a8( fis4.) r4
+    }
     \bar "||"
     \time 6/8
-    e'8. e16 e8 g8. e16 e8
+    e'8.^\markup { \italic "a tempo" } e16 e8 g8. e16 e8
     fis8. d16 d8 fis8 d4
     r8. c16 c c c8 r e16 e
     \appoggiatura { dis16 e } dis4 b8~ b4 r8
     r16 e e e g8~ g4 g16 g
-    fis4\< fis8~ fis4.~
+    fis4\<^\markup { \italic "accel." } fis8~ fis4.~
     fis2.
     \bar "||"
     \tempo \markup {
+      \magnify #0.8
       \concat {
         (
         \smaller \general-align #Y #DOWN \note {8} #1
@@ -96,7 +99,7 @@ Violinone = \new Voice {
     a4 b a
     gis4. gis~
     gis r
-    r cis,8 cis cis
+    r cis8 cis cis
     fis4.~ fis8 cis d
     cis4. cis~
     cis2.~
@@ -113,28 +116,33 @@ Violinone = \new Voice {
 
 Violintwo = \new Voice {
   \relative c'' {
-    \partial 8 r8
-    R2.
-    R
-    R
-    R
-    R
-    R
-    R
-    R
     \time 3/4
     \key g \major
     \tempo 4 = 88
+
+    \compressEmptyMeasures {
+      \grace { s8 } R2.*8
+    }
     \bar "||"
     \time 6/8
-    g2.
+    g2.\p^\markup { \italic "a tempo" }
     fis
     e
     dis
     e4.:32 c':32
-    b4.:32~\< b8:32 dis16( cisis dis8)
+    b4.:32~\<^\markup { \italic "accel." } b8:32 dis16( cisis dis8)
     fis16( e fis8) b16( a b8) <fis dis'>-> <fis dis'>->
     \bar "||"
+    \tempo \markup {
+      \magnify #0.8
+      \concat {
+        (
+        \smaller \general-align #Y #DOWN \note {8} #1
+        " = "
+        \smaller \general-align #Y #DOWN \note {4} #1
+        )
+      }
+    }
     b,4\f-- b-- b--
     b-- b-- b--
     c-- c-- c--
@@ -150,7 +158,7 @@ Violintwo = \new Voice {
     fis16( g a4~ a4.~
     a) g
     fis:32 b:32
-    dis,:32 fis8.:32 b:32
+    dis:32 fis8.:32 b:32
     e,8-> r r r4.
     <b, g'>8-> r r r4.
     <a g'>8-> r r r4.
@@ -207,27 +215,36 @@ Violintwo = \new Voice {
 Viola = \new Voice {
   \relative c' {
     \clef alto
-    \partial 8 r8
-    R2.
-    R
-    R
-    R
-    R
     \time 3/4
     \key g \major
     \tempo 4 = 88
+
+    \compressEmptyMeasures {
+      \grace { s8 } R2.*5
+    }
     <a c>4^"pizz."\p r r
     R2.
     <dis b'>4 r r
     \bar "||"
     \time 6/8
-    r4. g8 e b
+    r4.^\markup { \italic "a tempo" } g8 e b
     r4. <fis d'>4 <fis d'>8
     r4. e'8 c g
     r <dis' b'> <dis b'> r <dis b'> <dis b'>
     r <e c'> <e c'> r <e c'> <e c'>
-    r g16^"arco"\< a b8:32~ b4.:32
+    r^\markup { \italic "accel." } g16^"arco"\< a b8:32~ b4.:32
     c16-. b-. a-. g-. fis-. e-. dis-. c-. b-. a-. g-. fis-.
+    \bar "||"
+    \tempo \markup {
+      \magnify #0.8
+      \concat {
+        (
+        \smaller \general-align #Y #DOWN \note {8} #1
+        " = "
+        \smaller \general-align #Y #DOWN \note {4} #1
+        )
+      }
+    }
     g8->\f g g g g-> g->
     g8-> g g g g-> g->
     g8-> g g g g-> g->
@@ -301,11 +318,11 @@ Viola = \new Voice {
 Cello = \new Voice {
   \relative c, {
     \clef bass
-    \partial 8 r8
-    R2.
     \time 3/4
     \key g \major
     \tempo 4 = 88
+
+    \grace { s8 } R2.
     R
     R
     R
@@ -315,13 +332,24 @@ Cello = \new Voice {
     <b, fis' b>4\arpeggio r r
     \bar "||"
     \time 6/8
-    e8 g b e r r
+    e8^\markup { \italic "a tempo" } g b e r r
     d, fis a d a d
     c g c e r r
     b, r r b r r
-    c r r c r r
-    b8.->^"arco"\< b16-. b-. b-. b8.-> b16-. b-. b-.
+    c r r c r^"arco" r
+    b8.^\markup { \italic "accel." }\< b16-. b-. b-. b8.-> b16-. b-. b-.
     fis'8.-> fis16-. fis-. fis-. b8.-> b16-. b-. b-.
+    \bar "||"
+    \tempo \markup {
+      \magnify #0.8
+      \concat {
+        (
+        \smaller \general-align #Y #DOWN \note {8} #1
+        " = "
+        \smaller \general-align #Y #DOWN \note {4} #1
+        )
+      }
+    }
     e,4.->\f e8-. e-. e-.
     e4.-> e8-. e-. e-.
     c4.-> c8-. c-. c-.
