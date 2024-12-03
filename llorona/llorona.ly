@@ -420,23 +420,25 @@ Cello = \new Voice {
 
 
 music = {
-  \transpose g bes {
+  \transpose g a {
     <<
-      \tag #'score \tag #'vn1
-      \new Staff \with { instrumentName = "Violin 1" midiInstrument = "violin" }
-      << \global \Violinone >>
+      \new GrandStaff = "GrandStaff_violins" <<
+        \tag #'score \tag #'vn1
+        \new Staff \with { instrumentName = "Violin I" midiInstrument = "violin" }
+        << \Violinone >>
 
-      \tag #'score \tag #'vn2
-      \new Staff \with { instrumentName = "Violin 2" midiInstrument = "violin" }
-      << \global \Violintwo>>
+        \tag #'score \tag #'vn2
+        \new Staff \with { instrumentName = "Violin II" midiInstrument = "violin" }
+        << \Violintwo >>
+      >>
 
       \tag #'score \tag #'vla
       \new Staff \with { instrumentName = "Viola" midiInstrument = "viola" }
-      << \global \Viola>>
+      << \Viola>>
 
       \tag #'score \tag #'vlc
       \new Staff \with { instrumentName = "Cello" midiInstrument = "cello" }
-      << \global \Cello >>
+      << \Cello >>
     >>
   }
 }
