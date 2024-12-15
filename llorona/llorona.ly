@@ -12,7 +12,7 @@ Violinone = \new Voice {
   \relative c'' {
     \time 3/4
     \key g \major
-    \tempo 4 = 88
+    \tempo 4 = 65
 
     \magnifyMusic 0.7 {
       \acciaccatura { a8 } b4(\p^"Quasi cadenza" g) r16 g( a b)
@@ -44,7 +44,7 @@ Violinone = \new Voice {
         )
       }
     }
-    \tempo 4. = 120
+    \tempo 4. = 100
     e4\f e8 e e4
     e e8 e e4~
     e4. c4( b8)
