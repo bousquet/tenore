@@ -234,6 +234,103 @@ bassLyric = \lyricmode {
   vine!
 }
 
+violinOne = \relative c''' {
+  \clef "treble"
+  \key ees \major
+  \tempo "Andante"
+
+  R1 * 6
+  r2 g2\pp(
+  bes c)
+  ees( bes4) a8.\< g16
+  d'2.\! ees8.( d16)
+  g,1\>
+  bes,4\pp( c f, bes)
+  c8.( bes16 ees8. g,16) c4( bes)
+  bes( c f, bes)
+  c8.( bes16 ees8. g,16) bes2\<
+  ees'2.\mf d8.( c16)
+  d2.~ \tuplet 3/2 { d4 d8 }
+  f2.( c4)
+  ees2.~ ees8. ees16
+  g2( f)
+  ees2. d8.( c16)
+  bes2~ bes8. bes16( c8. bes16)
+  bes2.~ bes8. ees16(
+  f2.~ f8.) bes,16
+  % g'2. f4
+  ees2( d4) ees8.( f16)
+  ees2  f,,4 \startTrillSpan  \tuplet 14/4 { ees16\<( f \stopTrillSpan g aes bes c d ees f g aes bes c d) }
+  ees4\f c8 d ees2
+  r8 g,( g' ees) d( c bes4)
+  r8 \ottava 1 c( f g) aes4( f)
+  r8 c( g' f) ees( d c4) \ottava 0
+  g'2^\markup { \italic loco } f
+  ees2. d8.( c16)
+  bes2~ bes8. bes16( c8. bes16)
+  bes2.~ bes8. ees16
+  \ottava 1 f2.~ f8. bes,16
+  bes'2~ bes8 aes( g f)
+  ees2 d4( ees8. f16)
+  ees1~\>
+  ees~
+  ees\! \ottava 0
+  r2^\markup { \italic loco }^\markup { \italic div. } <g, ees'>2\pp \fermata
+  \bar "|."
+}
+
+violinTwo = \relative c'' {
+  \clef "treble"
+  \key ees \major
+  \tempo "Andante"
+
+  R1 * 6
+  r2 ees2(\pp
+  g aes)
+  g2. a8.\pp(\< g16)
+  bes2(\! a4 fis)
+  g1\>
+  d,\pp
+  ees2( g)
+  d1
+  ees2( g)\<
+  ees2.\mf d'8.( c16)
+  d2.~ \tuplet 3/2 { d4 d8 }
+  f2.( c4)
+  ees2.~ ees8. ees16
+  g2( f)
+  ees2. d8.( c16)
+  bes2~ bes8. bes16( c8. bes16)
+  bes2.~ bes8. ees16(
+  f2.~ f8.) bes,16
+  g'2. f4
+  ees2( d4) ees8.( f16)
+  ees2 ees,4 \startTrillSpan \tuplet 14/4 { ees16\<( f \stopTrillSpan g aes bes c d ees f g aes bes c d) }
+  ees4\! c8 d ees2
+  r8 g,( g' ees) d( c bes4)
+  r8 \ottava 1 c8( f g) aes4( f)
+  r8 c8( g' f) ees( d c4) \ottava 0
+  ees2 d
+  ees4 g, aes2
+  bes2~ bes8. bes16( c8. bes16)
+  bes2.~ bes8. ees16
+  \ottava 1 f2.~ f8. bes16
+  bes2~ bes8 aes(g f)
+  ees2 bes4( c8. d16)
+  ees1\> \ottava 0
+  \tuplet 3/2 { r8\! g,,( ees }
+  \tuplet 3/2 { bes' g ees) }
+  \tuplet 3/2 { g( ees bes }
+  \tuplet 3/2 { ees bes g) }
+
+  \tuplet 3/2 { r g'( ees }
+  \tuplet 3/2 { bes' g ees) }
+  \tuplet 3/2 { g( ees bes }
+  \tuplet 3/2 { ees bes g) }
+  r2^\markup { \italic div. } <ees'' bes'>2\pp \fermata
+  \bar "|."
+}
+
 viola = \relative c' {
   \clef "alto"
   \key ees \major
@@ -384,7 +481,7 @@ viola = \relative c' {
   << {ees2. d8.( c16) } \\ { ees4( g,) aes2 } >>
   bes2~ bes8. bes16( c8. bes16)
   bes2.~ bes8. ees16
-  f2.~ f8. bes16
+  f2.~ f8. bes,16
   bes2~ bes8 aes( g f)
   ees2 <bes d>4( <c ees>8. <d f>16)
 
@@ -514,24 +611,30 @@ bass = \relative c {
     \compressEmptyMeasures
     \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 
-    \new Voice = "soprano" { \soprano }
-    \new Lyrics \lyricsto soprano \sopranoLyric
+    % \new Voice = "soprano" { \soprano }
+    % \new Lyrics \lyricsto soprano \sopranoLyric
 
-    \new Voice = "alto" { \alto }
-    \new Lyrics \lyricsto alto \altoLyric
+    % \new Voice = "alto" { \alto }
+    % \new Lyrics \lyricsto alto \altoLyric
 
-    \new Voice = "tenor" { \tenor }
-    \new Lyrics \lyricsto tenor \tenorLyric
+    % \new Voice = "tenor" { \tenor }
+    % \new Lyrics \lyricsto tenor \tenorLyric
 
-    \new Voice = "bassChoir" { \bassChoir }
-    \new Lyrics \lyricsto bassChoir \bassLyric
+    % \new Voice = "bassChoir" { \bassChoir }
+    % \new Lyrics \lyricsto bassChoir \bassLyric
 
-    \new Voice = "viola" { \viola }
-    \new Voice = "cello" { \cello }
-    \new Voice = "bass" { \bass }
+    % \new Voice = "violinOne" { \violinOne }
+    \new Voice = "violinTwo" { \violinTwo }
+    % \new Voice = "viola" { \viola }
+    % \new Voice = "cello" { \cello }
+    % \new Voice = "bass" { \bass }
   >>
   \layout {
-    \context { \Staff \RemoveEmptyStaves }
+    \override MultiMeasureRest.expand-limit = 3
+    \set Staff.ottavationMarkups = #ottavation-ordinals
+    \context {
+      \Staff \RemoveEmptyStaves
+    }
   }
   \midi { }
 }
