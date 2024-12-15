@@ -6,6 +6,7 @@ soprano = \relative c'' {
   R1 * 6 \mark \default
   R1 * 5 \mark \default
   R1 * 4 \mark \default
+  R1
   g2 g4 g
   aes2. aes4
   g4. g8 g4 g
@@ -63,7 +64,7 @@ sopranoLyric = \lyricmode {
 alto = \relative c' {
   \key ees \major
   \bar ".|:"
-  R1 * 15
+  R1 * 16
   d2 d4 d
   f2. f4
   ees4. ees8 ees4 ees
@@ -120,7 +121,7 @@ altoLyric = \lyricmode {
 tenor = \relative c'' {
   \key ees \major
   \bar ".|:"
-  R1 * 15
+  R1 * 16
   bes2 bes4 bes
   c2. c4
   c4. c8 c4 g
@@ -179,7 +180,7 @@ bassChoir = \relative c' {
   \clef "bass"
   \key ees \major
   \bar ".|:"
-  R1 * 15
+  R1 * 16
   g2 g4 g
   f2. f4
   c4. c8 c4 c
@@ -258,7 +259,7 @@ violinOne = \relative c''' {
   bes2~ bes8. bes16( c8. bes16)
   bes2.~ bes8. ees16(
   f2.~ f8.) bes,16
-  % g'2. f4
+  g'2. f4
   ees2( d4) ees8.( f16)
   ees2  f,,4 \startTrillSpan  \tuplet 14/4 { ees16\<( f \stopTrillSpan g aes bes c d ees f g aes bes c d) }
   ees4\f c8 d ees2
@@ -462,10 +463,10 @@ viola = \relative c' {
   \tuplet 3/2 { r <c ees>( <ees aes> }
   \tuplet 3/2 { <aes c> <f aes> <c f>) }
 
-  % \tuplet 3/2 { r <bes ees>( <ees g> }
-  % \tuplet 3/2 { <g bes> <ees g> <bes ees>) }
-  % \tuplet 3/2 { r <bes d>( <d f> }
-  % \tuplet 3/2 { <ees aes> f <d bes>) }
+  \tuplet 3/2 { r <bes ees>( <ees g> }
+  \tuplet 3/2 { <g bes> <ees g> <bes ees>) }
+  \tuplet 3/2 { r <bes d>( <d f> }
+  \tuplet 3/2 { <ees aes> f <d bes>) }
 
   \tuplet 3/2 { r <ees, g>(\< <g bes> }
   \tuplet 3/2 { <bes ees> <g bes> <bes ees>) }
@@ -530,7 +531,7 @@ cello = \relative c {
   \clef "treble" ees2.~ ees8. ees16
   g2( f)
   ees2.( d8. c16)
-  % bes2~ bes8. bes16( c8. bes16)
+  bes2~ bes8. bes16( c8. bes16)
   bes2.~ bes8. ees16(
   f2.~ f8.) bes16
   g2. f4
@@ -584,7 +585,7 @@ bass = \relative c {
   bes'2 aes
   g aes
   bes1
-  % ees4 g bes ees,
+  ees4 g bes ees,
   bes2 aes
   g( aes)
   bes1
@@ -611,23 +612,23 @@ bass = \relative c {
     \compressEmptyMeasures
     \set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
 
-    % \new Voice = "soprano" { \soprano }
-    % \new Lyrics \lyricsto soprano \sopranoLyric
+    \new Voice = "soprano" { \soprano }
+    \new Lyrics \lyricsto soprano \sopranoLyric
 
-    % \new Voice = "alto" { \alto }
-    % \new Lyrics \lyricsto alto \altoLyric
+    \new Voice = "alto" { \alto }
+    \new Lyrics \lyricsto alto \altoLyric
 
-    % \new Voice = "tenor" { \tenor }
-    % \new Lyrics \lyricsto tenor \tenorLyric
+    \new Voice = "tenor" { \tenor }
+    \new Lyrics \lyricsto tenor \tenorLyric
 
-    % \new Voice = "bassChoir" { \bassChoir }
-    % \new Lyrics \lyricsto bassChoir \bassLyric
+    \new Voice = "bassChoir" { \bassChoir }
+    \new Lyrics \lyricsto bassChoir \bassLyric
 
-    % \new Voice = "violinOne" { \violinOne }
+    \new Voice = "violinOne" { \violinOne }
     \new Voice = "violinTwo" { \violinTwo }
-    % \new Voice = "viola" { \viola }
-    % \new Voice = "cello" { \cello }
-    % \new Voice = "bass" { \bass }
+    \new Voice = "viola" { \viola }
+    \new Voice = "cello" { \cello }
+    \new Voice = "bass" { \bass }
   >>
   \layout {
     \override MultiMeasureRest.expand-limit = 3
