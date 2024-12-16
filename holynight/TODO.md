@@ -1,0 +1,21 @@
+- [ ] Vocal Soloist (High Voice)
+- [ ] Soprano
+- [ ] Alto
+- [ ] Tenor
+- [ ] Bass
+- [ ] Violin 1
+- [ ] Violin 2
+- [ ] Viola
+- [ ] Cello
+- [ ] Double Bass
+- [x] Oboe 1
+- [x] Oboe 2
+- [ ] Bassoon 1
+- [ ] Bassoon 2
+- [ ] Trumpet 1
+- [ ] Trumpet 2
+- [ ] Trumpet 3
+- [ ] Timpani
+- [ ] Percussion?
+- [ ] Organ?
+- [ ] Repeats?
