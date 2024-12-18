@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-oboeOne = \relative c'' {
+oboeTwo = \relative c'' {
   \clef "treble"
   \key ees \major
   \tempo "Andante" 4 = 70
@@ -92,9 +92,9 @@ oboeOne = \relative c'' {
   \fine
 }
 
-\score {
-  <<
-    \compressEmptyMeasures
-    \oboeOne
-  >>
-}
+% \score {
+%   <<
+%     \compressEmptyMeasures
+%     \oboeTwo
+%   >>
+% }

@@ -99,9 +99,9 @@ oboeOne = \relative c'' {
   \fine
 }
 
-\score {
-  <<
-    \compressEmptyMeasures
-    \oboeOne
-  >>
-}
+% \score {
+%   <<
+%     \compressEmptyMeasures
+%     \oboeOne
+%   >>
+% }

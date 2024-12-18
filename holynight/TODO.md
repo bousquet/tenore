@@ -8,14 +8,14 @@
 - [ ] Viola
 - [ ] Cello
 - [ ] Double Bass
-- [x] Oboe 1
-- [x] Oboe 2
-- [ ] Bassoon 1
-- [ ] Bassoon 2
-- [ ] Trumpet 1
-- [ ] Trumpet 2
-- [ ] Trumpet 3
-- [ ] Timpani
+- [X] Oboe 1
+- [X] Oboe 2
+- [X] Bassoon 1
+- [X] Bassoon 2
+- [X] Trumpet 1
+- [X] Trumpet 2
+- [X] Trumpet 3
+- [X] Timpani
 - [ ] Percussion?
 - [ ] Organ?
 - [ ] Repeats?

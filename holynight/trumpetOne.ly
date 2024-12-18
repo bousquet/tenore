@@ -1,6 +1,7 @@
 \version "2.24.4"
 
-trumpet = \relative c' {
+trumpetOne = \relative c' {
+  \transposition bes
   \clef "treble"
   \key f \major
   \tempo "Andante" 4 = 70
@@ -31,9 +32,9 @@ trumpet = \relative c' {
   \fine
 }
 
-\score {
-  <<
-    \compressEmptyMeasures
-    \trumpet
-  >>
-}
+% \score {
+%   <<
+%     \compressEmptyMeasures
+%     \trumpetOne
+%   >>
+% }
